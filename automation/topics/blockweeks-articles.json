@@ -1,1 +1,146 @@
-[]
+[
+  {
+    "id": "bw-articles-001",
+    "title": "稳定币的真实支付需求与用户讨论（候选 1）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-002",
+    "title": "钱包签名与授权提示的用户体验（候选 2）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-003",
+    "title": "DeFi机制或产品变更引发的社区分歧（候选 3）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-004",
+    "title": "以太坊扩容与用户使用成本的近期讨论（候选 4）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-005",
+    "title": "Solana交易体验与生态新讨论（候选 5）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-006",
+    "title": "加密基础设施在真实业务中的采用（候选 6）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-007",
+    "title": "开发工具或协议发布的社区反馈（候选 7）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-008",
+    "title": "代币设计与治理的新讨论（候选 8）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-009",
+    "title": "稳定币的真实支付需求与用户讨论（候选 9）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-010",
+    "title": "钱包签名与授权提示的用户体验（候选 10）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-011",
+    "title": "DeFi机制或产品变更引发的社区分歧（候选 11）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-012",
+    "title": "以太坊扩容与用户使用成本的近期讨论（候选 12）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-013",
+    "title": "Solana交易体验与生态新讨论（候选 13）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-014",
+    "title": "加密基础设施在真实业务中的采用（候选 14）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-015",
+    "title": "开发工具或协议发布的社区反馈（候选 15）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-016",
+    "title": "代币设计与治理的新讨论（候选 16）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-017",
+    "title": "稳定币的真实支付需求与用户讨论（候选 17）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-018",
+    "title": "钱包签名与授权提示的用户体验（候选 18）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-019",
+    "title": "DeFi机制或产品变更引发的社区分歧（候选 19）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-020",
+    "title": "以太坊扩容与用户使用成本的近期讨论（候选 20）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-021",
+    "title": "Solana交易体验与生态新讨论（候选 21）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-022",
+    "title": "加密基础设施在真实业务中的采用（候选 22）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-023",
+    "title": "开发工具或协议发布的社区反馈（候选 23）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  },
+  {
+    "id": "bw-articles-024",
+    "title": "代币设计与治理的新讨论（候选 24）",
+    "status": "pending",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+  }
+]

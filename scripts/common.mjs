@@ -17,7 +17,7 @@ export function validateSite(site) {
   }
   assert(rest.origin === url.origin && rest.pathname.endsWith('/'), 'REST base must share the site origin and end in /');
   assert(['draft', 'publish'].includes(site.status), 'Unsupported WordPress status');
-  assert(['manual', 'protected'].includes(site.mergeMode), 'Unsupported mergeMode');
+  assert(['manual', 'checked', 'protected'].includes(site.mergeMode), 'Unsupported mergeMode');
   new Intl.DateTimeFormat('en', { timeZone: site.timezone });
   assert(Number.isInteger(site.minimumCharacters) && site.minimumCharacters >= 1, 'Invalid minimumCharacters');
   assert(Number.isInteger(site.maximumCharacters) && site.maximumCharacters >= site.minimumCharacters, 'Invalid maximumCharacters');

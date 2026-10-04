@@ -51,7 +51,7 @@ export function validatePR(base, head) {
     const date = new Intl.DateTimeFormat('en-CA', { timeZone: site.timezone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(process.env.PR_CREATED_AT));
     assert(a.date === date, 'Article date must match PR creation date in the site timezone');
   }
-  return { kind: 'article', articleAutoMergeEligible: site.mergeMode === 'protected', siteId: a.siteId, file };
+  return { kind: 'article', articleAutoMergeEligible: ['checked', 'protected'].includes(site.mergeMode), siteId: a.siteId, file };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

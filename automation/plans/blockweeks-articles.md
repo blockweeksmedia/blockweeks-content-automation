@@ -1,5 +1,3 @@
-# BlockWeeks articles 编辑规划（待基于既有内容补齐）
+# 文章编辑规划
 
-已有分类 ID 见 config/blockweeks-taxonomy-map.json。读取 WordPress 既有标题后建立首批选题队列。当前 topics 为空，没有虚构待写主题。
-
-按栏目适配内容；无合格新选题允许跳过。
+从近期 X／Reddit 可核验讨论中选择一个明确问题，查一手资料后写报道或分析。优先稳定币、钱包与安全、DeFi、以太坊、Solana、真实用户采用、开发工具等方向；分类按实际稿件决定，不强制轮转栏目。每天最多一篇，素材不足跳过。执行细则见 automation/EXECUTION_RULES_CN.md。

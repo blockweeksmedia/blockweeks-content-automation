@@ -1,5 +1,3 @@
-# BlockWeeks forum 编辑规划（待基于既有内容补齐）
+# 论坛编辑规划
 
-已有分类 ID 见 config/blockweeks-taxonomy-map.json。读取 WordPress 既有标题后建立首批选题队列。当前 topics 为空，没有虚构待写主题。
-
-按栏目适配内容；无合格新选题允许跳过。
+用真实近期讨论发起一个中文问题，默认综合讨论1816。每帖200–500字，提供必要背景和原帖链接，不虚构亲身经历或回复。与当日文章优先用不同原帖和讨论角度；不自动生成广告和招聘。每天最多一帖。执行细则见 automation/EXECUTION_RULES_CN.md。
