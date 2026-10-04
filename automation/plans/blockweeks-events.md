@@ -1,5 +1,3 @@
-# BlockWeeks events 编辑规划（待基于既有内容补齐）
+# 活动编辑规划
 
-已有分类 ID 见 config/blockweeks-taxonomy-map.json。读取 WordPress 既有标题后建立首批选题队列。当前 topics 为空，没有虚构待写主题。
-
-按栏目适配内容；无合格新选题允许跳过。
+每周一次，每次最多新增一场未来活动。主办方官网是最终信息依据，地点、时间、时区、形式和报名地址必须核实。选题队列是可填的研究位置，不代表已经核实的活动；实际标题写进articleTitle。既有活动更新/取消/延期先报告，当前不自动覆盖。未查到合格新活动则跳过。执行细则见 automation/EXECUTION_RULES_CN.md。

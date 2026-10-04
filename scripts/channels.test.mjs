@@ -12,8 +12,8 @@ const response = x => ({ok:true,status:200,json:async()=>x});
 const pathFor = a => `automation/blog-inbox/${a.siteId}/${a.date}-${a.slug}.json`;
 const stored = (a,s) => ({id:42,slug:a.slug,status:s.status,title:{raw:a.title},content:{raw:a.content},...(s.supportsExcerpt===false?{}:{excerpt:{raw:a.excerpt}}),[s.categoryField]:a.categoryIds,...(s.tagField?{[s.tagField]:a.tagIds??s.tags}:{}),link:'https://blockweeks.com/test'});
 
-test('four configurations validate and publication remains disabled',()=>{
- for(const name of ['articles','docs','forum','events']){const s=JSON.parse(readFileSync(new URL(`../sites/blockweeks-${name}.json`,import.meta.url)));validateSite(s);assert.equal(s.enabled,false);assert.equal(s.status,'draft');}
+test('four configurations validate for checked draft imports',()=>{
+ for(const name of ['articles','docs','forum','events']){const s=JSON.parse(readFileSync(new URL(`../sites/blockweeks-${name}.json`,import.meta.url)));validateSite(s);assert.equal(s.enabled,true);assert.equal(s.status,'draft');assert.equal(s.mergeMode,'checked');}
 });
 
 for(const channel of ['articles','docs','forum']){
