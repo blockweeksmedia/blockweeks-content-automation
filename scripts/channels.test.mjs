@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { validateArticle, validateSite } from './common.mjs';
 import { importArticle } from './import-wordpress.mjs';
-import { payloadFor } from './channel-adapters.mjs';
+import { payloadFor, verifyTECEvent } from './channel-adapters.mjs';
 
 const config = channel => ({...JSON.parse(readFileSync(new URL(`../sites/blockweeks-${channel}.json`,import.meta.url))),enabled:true,minimumCharacters:4});
 const article = (channel,extra={}) => ({siteId:`blockweeks-${channel}`,date:'2026-10-04',topicId:'topic-1',title:'真实问题测试',slug:'discussion-test',excerpt:'测试摘要',content:'<p>用于核对路由与栏目的一段内容。</p>',source:'codex-scheduled-task',categoryIds:[config(channel).allowedCategories[0]],sources:[{title:'原始来源',url:'https://example.org/announcement',kind:'official',checkedAt:'2026-10-04T10:00:00Z'}],...extra});
@@ -69,4 +69,20 @@ test('activity retry reuses identical item; lost create response never auto-retr
 test('event metadata cannot be submitted to an ordinary article route',()=>{
  const s=config('articles'),a=article('articles',{event});assert.throws(()=>validateArticle(a,s,pathFor(a)));
  assert.equal(payloadFor(article('forum'),config('forum')).qa_cat[0],1817);
+});
+
+test('free event creation preserves zero and verifies numeric cost, not empty metadata',()=>{
+ const a=article('events',{event:{...event,cost:'0'}});
+ assert.equal(payloadFor(a,config('events')).cost,'0.00');
+ const native={start_date:event.startDate,end_date:event.endDate,timezone:event.timezone,all_day:false,website:event.website,venue:{id:14},organizer:[{id:11}],cost:'免费',cost_details:{values:['0.00']}};
+ assert.doesNotThrow(()=>verifyTECEvent(native,a));
+ assert.throws(()=>verifyTECEvent({...native,cost:'',cost_details:{values:[]}},a),/cost/);
+ assert.throws(()=>verifyTECEvent({...native,cost_details:{values:['10']}},a),/cost/);
+});
+test('paid event verification accepts formatting but rejects different or multiple amounts',()=>{
+ const a=article('events',{event:{...event,cost:'99.50'}});
+ const native={start_date:event.startDate,end_date:event.endDate,timezone:event.timezone,all_day:false,website:event.website,venue:{id:14},organizer:[{id:11}],cost:'$99.50',cost_details:{values:[99.5]}};
+ assert.doesNotThrow(()=>verifyTECEvent(native,a));
+ assert.throws(()=>verifyTECEvent({...native,cost_details:{values:[100]}},a),/cost/);
+ assert.throws(()=>verifyTECEvent({...native,cost_details:{values:[99.5,199]}},a),/cost/);
 });

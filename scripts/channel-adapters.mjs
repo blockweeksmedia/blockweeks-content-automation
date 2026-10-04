@@ -8,7 +8,7 @@ export function payloadFor(article, site) {
     return { ...common, description: article.content, excerpt: article.excerpt,
       start_date: e.startDate, end_date: e.endDate, timezone: e.timezone, all_day: e.allDay,
       website: e.website, categories: article.categoryIds, tags: article.tagIds ?? site.tags,
-      ...(e.cost === undefined ? {} : { cost: e.cost }),
+      ...(e.cost === undefined ? {} : { cost: e.cost === '0' ? '0.00' : e.cost }),
       ...(e.venueId ? { venue: e.venueId } : {}),
       ...(e.organizerIds?.length ? { organizer: e.organizerIds } : {}),
       ...(article.featuredMediaId ? { image: String(article.featuredMediaId) } : {}) };
@@ -37,7 +37,13 @@ export function verifyTECEvent(event, article) {
   const e = article.event;
   assert(event.start_date === e.startDate && event.end_date === e.endDate && event.timezone === e.timezone && event.all_day === e.allDay, 'Stored activity date/time mismatch');
   assert(event.website === e.website, 'Stored activity official URL mismatch');
-  if (e.cost !== undefined) assert(String(event.cost) === e.cost, 'Stored event cost mismatch');
+  if (e.cost !== undefined) {
+    // Native cost is a formatted display string; cost_details holds actual amounts.
+    const values = event.cost_details?.values;
+    const decimal = x => (typeof x === 'string' || typeof x === 'number') && /^\d+(?:\.\d+)?$/.test(String(x)) && Number.isFinite(Number(x));
+    const amountsMatch = decimal(e.cost) && Array.isArray(values) && values.length === 1 && decimal(values[0]) && Number(values[0]) === Number(e.cost);
+    assert(amountsMatch || String(event.cost) === e.cost, 'Stored event cost mismatch');
+  }
   if (e.venueId) assert(event.venue?.id === e.venueId, 'Stored venue mismatch');
   if (e.organizerIds?.length) assert(sameIDs(event.organizer?.map(x => x.id), e.organizerIds), 'Stored organizer mismatch');
   if (article.featuredMediaId) assert(event.image?.id === article.featuredMediaId, 'Stored event cover mismatch');
