@@ -23,11 +23,47 @@ jobs:
           WP_BLOCKWEEKS_USERNAME: ${{ secrets.WP_BLOCKWEEKS_USERNAME }}
           WP_BLOCKWEEKS_APP_PASSWORD: ${{ secrets.WP_BLOCKWEEKS_APP_PASSWORD }}
         run: node scripts/preflight-wordpress.mjs
+      - name: Compare public and authenticated inventories
+        if: always()
+        env:
+          WP_BLOCKWEEKS_USERNAME: ${{ secrets.WP_BLOCKWEEKS_USERNAME }}
+          WP_BLOCKWEEKS_APP_PASSWORD: ${{ secrets.WP_BLOCKWEEKS_APP_PASSWORD }}
+        run: |
+          node --input-type=module <<'NODE'
+          import {writeFileSync} from 'node:fs';
+          const base='https://blockweeks.com/wp-json/';
+          const username=process.env.WP_BLOCKWEEKS_USERNAME;
+          const password=process.env.WP_BLOCKWEEKS_APP_PASSWORD;
+          if(!username || !password) throw new Error('Missing WordPress credentials');
+          const auth={Authorization:'Basic '+Buffer.from(username+':'+password).toString('base64')};
+          const report={checkedAt:new Date().toISOString(),readOnly:true,checks:[]};
+          async function check(label,path,authenticated,account=false){
+            try{
+              const r=await fetch(base+path,{headers:authenticated?auth:{},redirect:'error',signal:AbortSignal.timeout(30000)});
+              let b;try{b=await r.json();}catch{report.checks.push({label,status:r.status,error:'Non-JSON response'});return;}
+              const entry={label,status:r.status,total:r.headers.get('x-wp-total')};
+              if(account) entry.permissions=Object.fromEntries(['edit_posts','publish_posts','edit_others_posts','edit_docs','publish_docs','edit_qa_posts','publish_qa_posts','edit_tribe_events','publish_tribe_events'].map(k=>[k,Boolean(b.capabilities?.[k])]));
+              else if(Array.isArray(b)) {entry.count=b.length;entry.sample=b.slice(0,3).map(x=>({id:x.id,title:x.title?.rendered??x.title}));}
+              else if(Array.isArray(b.events)){entry.count=b.events.length;entry.total=b.total;entry.sample=b.events.slice(0,3).map(x=>({id:x.id,title:x.title}));}
+              else entry.code=String(b.code??'unknown').replace(/[^a-z0-9_-]/gi,'');
+              report.checks.push(entry);
+            }catch{report.checks.push({label,error:'Connection failed or redirected'});}
+          }
+          for(const c of ['posts','docs','qa_post','tribe_events']){
+            const path='wp/v2/'+c+'?context=view&status=publish&per_page=3&_fields=id,title';
+            await check(c+' public',path,false);
+            await check(c+' authenticated view',path,true);
+          }
+          await check('account capabilities','wp/v2/users/me?context=edit&_fields=capabilities',true,true);
+          await check('native event public','tribe/events/v1/events?per_page=3',false);
+          writeFileSync('blockweeks-inventory-diagnostics.json',JSON.stringify(report,null,2)+'\n');
+          console.log(JSON.stringify(report));
+          NODE
       - name: Save inventory and access result
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: blockweeks-preflight-result
-          path: blockweeks-preflight-result.json
+          path: blockweeks-*.json
           if-no-files-found: warn
           retention-days: 7
