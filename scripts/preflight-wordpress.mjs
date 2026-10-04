@@ -22,7 +22,7 @@ try {
       let complete = false;
       for (let page = 1; rows.length < cap; page++) {
         const url = new URL(site.collection,site.restBase);
-        for (const [k,v] of Object.entries({context:'edit',status:'publish',per_page:'100',page:String(page),orderby:'date',order:'desc',_fields:'id,title,slug,link,date,status'})) url.searchParams.set(k,v);
+        for (const [k,v] of Object.entries({context:'view',status:'publish',per_page:'100',page:String(page),orderby:'date',order:'desc',_fields:'id,title,slug,link,date,status'})) url.searchParams.set(k,v);
         const batch = await request(url);
         assert(Array.isArray(batch), 'Unexpected inventory response');
         rows.push(...batch);

@@ -56,6 +56,7 @@ jobs:
           }
           await check('account capabilities','wp/v2/users/me?context=edit&_fields=capabilities',true,true);
           await check('native event public','tribe/events/v1/events?per_page=3',false);
+          await check('native event authenticated','tribe/events/v1/events?per_page=3',true);
           writeFileSync('blockweeks-inventory-diagnostics.json',JSON.stringify(report,null,2)+'\n');
           console.log(JSON.stringify(report));
           NODE
