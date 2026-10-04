@@ -42,10 +42,13 @@
   {
     "id": "bw-docs-006",
     "title": "区块确认与最终性：交易什么时候算真正完成",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       256
-    ]
+    ],
+    "usedAt": "2026-10-05",
+    "articleSlug": "block-confirmations-and-finality",
+    "articleTitle": "区块确认与最终性：转账显示成功，为什么还要等待？"
   },
   {
     "id": "bw-docs-007",
