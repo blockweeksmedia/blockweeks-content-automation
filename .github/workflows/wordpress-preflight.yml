@@ -1,6 +1,10 @@
 name: wordpress-preflight
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/wordpress-preflight.yml'
 permissions:
   contents: read
 jobs:
