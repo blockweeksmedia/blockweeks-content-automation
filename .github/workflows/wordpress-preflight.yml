@@ -1,0 +1,29 @@
+name: wordpress-preflight
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  read-only-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Read existing published titles only
+        env:
+          WP_BLOCKWEEKS_USERNAME: ${{ secrets.WP_BLOCKWEEKS_USERNAME }}
+          WP_BLOCKWEEKS_APP_PASSWORD: ${{ secrets.WP_BLOCKWEEKS_APP_PASSWORD }}
+        run: node scripts/preflight-wordpress.mjs
+      - name: Save inventory and access result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: blockweeks-preflight-result
+          path: blockweeks-preflight-result.json
+          if-no-files-found: warn
+          retention-days: 7

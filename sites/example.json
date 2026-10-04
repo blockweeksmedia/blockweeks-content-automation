@@ -1,0 +1,20 @@
+{
+  "siteId": "example",
+  "name": "示例网站，请替换",
+  "enabled": false,
+  "url": "https://example.com",
+  "restBase": "https://example.com/wp-json/wp/v2/",
+  "timezone": "Asia/Shanghai",
+  "githubRepository": "OWNER/REPOSITORY",
+  "baseBranch": "main",
+  "mergeMode": "manual",
+  "status": "draft",
+  "minimumCharacters": 1200,
+  "maximumCharacters": 12000,
+  "categories": [],
+  "tags": [],
+  "credentials": {
+    "usernameEnv": "WP_EXAMPLE_USERNAME",
+    "passwordEnv": "WP_EXAMPLE_APP_PASSWORD"
+  }
+}

@@ -1,0 +1,1699 @@
+{
+  "generatedAt": "2026-10-04T10:43:35+00:00",
+  "siteTimezone": "Asia/Shanghai",
+  "plugins": [
+    {
+      "name": "BetterDocs",
+      "version": "4.9.3",
+      "active": true
+    },
+    {
+      "name": "QAPress",
+      "version": "4.9.4",
+      "active": true
+    },
+    {
+      "name": "The Events Calendar",
+      "version": "6.18.0",
+      "active": true
+    }
+  ],
+  "contentCounts": {
+    "post": 34676,
+    "docs": 51,
+    "qa_post": 69,
+    "tribe_events": 21
+  },
+  "registeredRoutes": {
+    "/wp/v2/posts": [
+      {
+        "methods": [
+          "GET"
+        ],
+        "fields": {
+          "context": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "view",
+              "embed",
+              "edit"
+            ],
+            "properties": []
+          },
+          "page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "per_page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "after": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "modified_after": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author_exclude": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "before": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "modified_before": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "exclude": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "include": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search_semantics": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "exact"
+            ],
+            "properties": []
+          },
+          "offset": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "order": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "asc",
+              "desc"
+            ],
+            "properties": []
+          },
+          "orderby": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "author",
+              "date",
+              "id",
+              "include",
+              "modified",
+              "parent",
+              "relevance",
+              "slug",
+              "include_slugs",
+              "title"
+            ],
+            "properties": []
+          },
+          "search_columns": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tax_relation": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "AND",
+              "OR"
+            ],
+            "properties": []
+          },
+          "categories": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "categories_exclude": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tags": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tags_exclude": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "special": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "special_exclude": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "sticky": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "ignore_sticky": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "format": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      },
+      {
+        "methods": [
+          "POST"
+        ],
+        "fields": {
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "date_gmt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "publish",
+              "future",
+              "draft",
+              "pending",
+              "private",
+              "tribe-ea-success",
+              "tribe-ea-failed",
+              "tribe-ea-schedule",
+              "tribe-ea-pending",
+              "tribe-ea-draft",
+              "tribe-ignored"
+            ],
+            "properties": []
+          },
+          "password": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "title": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered"
+            ]
+          },
+          "content": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered",
+              "block_version",
+              "protected"
+            ]
+          },
+          "author": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "excerpt": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered",
+              "protected"
+            ]
+          },
+          "featured_media": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "comment_status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "properties": []
+          },
+          "ping_status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "properties": []
+          },
+          "format": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "standard",
+              "aside",
+              "chat",
+              "gallery",
+              "link",
+              "image",
+              "quote",
+              "status",
+              "video",
+              "audio"
+            ],
+            "properties": []
+          },
+          "meta": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "footnotes"
+            ]
+          },
+          "sticky": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "template": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "categories": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tags": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "special": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      }
+    ],
+    "/wp/v2/docs": [
+      {
+        "methods": [
+          "GET"
+        ],
+        "fields": {
+          "context": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "view",
+              "embed",
+              "edit"
+            ],
+            "properties": []
+          },
+          "page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "per_page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "after": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "modified_after": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author_exclude": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "before": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "modified_before": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "exclude": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "include": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search_semantics": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "exact"
+            ],
+            "properties": []
+          },
+          "offset": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "order": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "asc",
+              "desc"
+            ],
+            "properties": []
+          },
+          "orderby": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "author",
+              "date",
+              "id",
+              "include",
+              "modified",
+              "parent",
+              "relevance",
+              "slug",
+              "include_slugs",
+              "title",
+              "menu_order"
+            ],
+            "properties": []
+          },
+          "search_columns": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tax_relation": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "AND",
+              "OR"
+            ],
+            "properties": []
+          },
+          "doc_category": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "doc_category_exclude": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "doc_tag": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "doc_tag_exclude": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      },
+      {
+        "methods": [
+          "POST"
+        ],
+        "fields": {
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "date_gmt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "publish",
+              "future",
+              "draft",
+              "pending",
+              "private",
+              "tribe-ea-success",
+              "tribe-ea-failed",
+              "tribe-ea-schedule",
+              "tribe-ea-pending",
+              "tribe-ea-draft",
+              "tribe-ignored"
+            ],
+            "properties": []
+          },
+          "password": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "title": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered"
+            ]
+          },
+          "content": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered",
+              "block_version",
+              "protected"
+            ]
+          },
+          "author": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "excerpt": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered",
+              "protected"
+            ]
+          },
+          "featured_media": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "comment_status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "properties": []
+          },
+          "ping_status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "properties": []
+          },
+          "meta": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "footnotes"
+            ]
+          },
+          "template": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "doc_category": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "doc_tag": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "year_month": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "word_count": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "total_views": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "reactions": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author_info": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "doc_category_info": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "doc_tag_info": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      }
+    ],
+    "/wp/v2/qa_post": [
+      {
+        "methods": [
+          "GET"
+        ],
+        "fields": {
+          "context": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "view",
+              "embed",
+              "edit"
+            ],
+            "properties": []
+          },
+          "page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "per_page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "after": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "modified_after": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author_exclude": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "before": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "modified_before": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "exclude": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "include": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search_semantics": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "exact"
+            ],
+            "properties": []
+          },
+          "offset": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "order": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "asc",
+              "desc"
+            ],
+            "properties": []
+          },
+          "orderby": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "author",
+              "date",
+              "id",
+              "include",
+              "modified",
+              "parent",
+              "relevance",
+              "slug",
+              "include_slugs",
+              "title"
+            ],
+            "properties": []
+          },
+          "search_columns": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tax_relation": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "AND",
+              "OR"
+            ],
+            "properties": []
+          },
+          "qa_cat": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "qa_cat_exclude": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      },
+      {
+        "methods": [
+          "POST"
+        ],
+        "fields": {
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "date_gmt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "publish",
+              "future",
+              "draft",
+              "pending",
+              "private",
+              "tribe-ea-success",
+              "tribe-ea-failed",
+              "tribe-ea-schedule",
+              "tribe-ea-pending",
+              "tribe-ea-draft",
+              "tribe-ignored"
+            ],
+            "properties": []
+          },
+          "password": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "title": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered"
+            ]
+          },
+          "content": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered",
+              "block_version",
+              "protected"
+            ]
+          },
+          "author": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "comment_status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "properties": []
+          },
+          "ping_status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "properties": []
+          },
+          "template": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "qa_cat": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      }
+    ],
+    "/wp/v2/tribe_events": [
+      {
+        "methods": [
+          "GET"
+        ],
+        "fields": {
+          "context": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "view",
+              "embed",
+              "edit"
+            ],
+            "properties": []
+          },
+          "page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "per_page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "after": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "modified_after": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "author_exclude": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "before": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "modified_before": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "exclude": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "include": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search_semantics": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "exact"
+            ],
+            "properties": []
+          },
+          "offset": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "order": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "asc",
+              "desc"
+            ],
+            "properties": []
+          },
+          "orderby": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "author",
+              "date",
+              "id",
+              "include",
+              "modified",
+              "parent",
+              "relevance",
+              "slug",
+              "include_slugs",
+              "title"
+            ],
+            "properties": []
+          },
+          "search_columns": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tax_relation": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "AND",
+              "OR"
+            ],
+            "properties": []
+          },
+          "tags": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tags_exclude": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tribe_events_cat": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tribe_events_cat_exclude": {
+            "type": [
+              "object",
+              "array"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      },
+      {
+        "methods": [
+          "POST"
+        ],
+        "fields": {
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "date_gmt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "publish",
+              "future",
+              "draft",
+              "pending",
+              "private",
+              "tribe-ea-success",
+              "tribe-ea-failed",
+              "tribe-ea-schedule",
+              "tribe-ea-pending",
+              "tribe-ea-draft",
+              "tribe-ignored"
+            ],
+            "properties": []
+          },
+          "password": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "title": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered"
+            ]
+          },
+          "content": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered",
+              "block_version",
+              "protected"
+            ]
+          },
+          "author": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "excerpt": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "raw",
+              "rendered",
+              "protected"
+            ]
+          },
+          "featured_media": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "comment_status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "properties": []
+          },
+          "ping_status": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "properties": []
+          },
+          "meta": {
+            "type": "object",
+            "required": false,
+            "enum": null,
+            "properties": [
+              "_tribe_events_status",
+              "_tribe_events_status_reason",
+              "footnotes"
+            ]
+          },
+          "template": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tags": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tribe_events_cat": {
+            "type": "array",
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      }
+    ],
+    "/tribe/events/v1/events": [
+      {
+        "methods": [
+          "GET"
+        ],
+        "fields": {
+          "page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "per_page": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "start_date": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "end_date": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "starts_before": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "starts_after": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "ends_before": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "ends_after": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "strict_dates": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "search": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "categories": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tags": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "venue": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "organizer": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "featured": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "geoloc": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "geoloc_lat": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "geoloc_lng": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "include": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "post_parent": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "ticketed": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      },
+      {
+        "methods": [
+          "POST"
+        ],
+        "fields": {
+          "author": {
+            "type": "integer",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "date": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "date_utc": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "enum": null,
+            "properties": []
+          },
+          "description": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "slug": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "excerpt": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "status": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "timezone": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "all_day": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "start_date": {
+            "type": "string",
+            "required": true,
+            "enum": null,
+            "properties": []
+          },
+          "end_date": {
+            "type": "string",
+            "required": true,
+            "enum": null,
+            "properties": []
+          },
+          "image": {
+            "type": "string",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "cost": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "website": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "show_map": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "show_map_link": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "hide_from_listings": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "sticky": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "featured": {
+            "type": "boolean",
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "categories": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "tags": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "venue": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          },
+          "organizer": {
+            "type": null,
+            "required": false,
+            "enum": null,
+            "properties": []
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+name: wordpress-import
+on:
+  push:
+    branches: [main]
+    paths: ['automation/blog-inbox/**']
+  workflow_dispatch:
+    inputs:
+      before_sha:
+        description: 'Recovery: commit immediately before the original merge'
+        required: true
+      after_sha:
+        description: 'Recovery: original merged commit SHA'
+        required: true
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.prepare.outputs.matrix }}
+      has_articles: ${{ steps.prepare.outputs.has_articles }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - id: prepare
+        env:
+          BEFORE_SHA: ${{ inputs.before_sha || github.event.before }}
+          AFTER_SHA: ${{ inputs.after_sha || github.sha }}
+        shell: bash
+        run: |
+          # Recovery commits must both belong to the trusted main history.
+          git merge-base --is-ancestor "$BEFORE_SHA" HEAD
+          git merge-base --is-ancestor "$AFTER_SHA" HEAD
+          git checkout --detach "$AFTER_SHA"
+          node scripts/prepare-import.mjs "$BEFORE_SHA" "$AFTER_SHA"
+  import:
+    needs: prepare
+    if: needs.prepare.outputs.has_articles == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    concurrency:
+      group: wp-import-${{ github.repository }}-${{ matrix.importGroup }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.after_sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Import one WordPress article
+        env:
+          ARTICLE_FILE: ${{ matrix.file }}
+          WP_USERNAME_VALUE: ${{ secrets[matrix.usernameEnv] }}
+          WP_PASSWORD_VALUE: ${{ secrets[matrix.passwordEnv] }}
+        shell: bash
+        run: node scripts/import-wordpress.mjs "$ARTICLE_FILE" > import-result.json
+      - name: Save verified import receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: import-result-${{ matrix.siteId }}-${{ github.run_attempt }}
+          path: import-result.json
+          retention-days: 30

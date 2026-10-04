@@ -1,0 +1,38 @@
+{
+  "siteId": "blockweeks-articles",
+  "name": "BlockWeeks articles",
+  "enabled": false,
+  "url": "https://blockweeks.com",
+  "restBase": "https://blockweeks.com/wp-json/wp/v2/",
+  "timezone": "Asia/Shanghai",
+  "githubRepository": "blockweeksmedia/blockweeks-content-automation",
+  "baseBranch": "main",
+  "mergeMode": "manual",
+  "status": "draft",
+  "minimumCharacters": 1200,
+  "maximumCharacters": 12000,
+  "categories": [],
+  "tags": [],
+  "credentials": {
+    "usernameEnv": "WP_BLOCKWEEKS_USERNAME",
+    "passwordEnv": "WP_BLOCKWEEKS_APP_PASSWORD"
+  },
+  "adapter": "wp",
+  "collection": "posts",
+  "categoryField": "categories",
+  "tagField": "tags",
+  "allowedCategories": [
+    1227,
+    7971,
+    1,
+    29,
+    28,
+    1710,
+    227,
+    207
+  ],
+  "allowedTags": [],
+  "supportsExcerpt": true,
+  "supportsFeaturedMedia": true,
+  "importGroup": "blockweeks"
+}

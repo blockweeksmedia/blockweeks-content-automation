@@ -1,0 +1,34 @@
+{
+  "siteId": "blockweeks-forum",
+  "name": "BlockWeeks forum",
+  "enabled": false,
+  "url": "https://blockweeks.com",
+  "restBase": "https://blockweeks.com/wp-json/wp/v2/",
+  "timezone": "Asia/Shanghai",
+  "githubRepository": "blockweeksmedia/blockweeks-content-automation",
+  "baseBranch": "main",
+  "mergeMode": "manual",
+  "status": "draft",
+  "minimumCharacters": 150,
+  "maximumCharacters": 3000,
+  "categories": [],
+  "tags": [],
+  "credentials": {
+    "usernameEnv": "WP_BLOCKWEEKS_USERNAME",
+    "passwordEnv": "WP_BLOCKWEEKS_APP_PASSWORD"
+  },
+  "adapter": "wp",
+  "collection": "qa_post",
+  "categoryField": "qa_cat",
+  "tagField": null,
+  "allowedCategories": [
+    1817,
+    1819,
+    1818,
+    1816
+  ],
+  "allowedTags": [],
+  "supportsExcerpt": false,
+  "supportsFeaturedMedia": false,
+  "importGroup": "blockweeks"
+}
