@@ -33,6 +33,14 @@ for(const [key,label,category] of [['articles','文章',207],['docs','知识库'
      const read=await fetch(u,{headers,redirect:'error',signal:AbortSignal.timeout(30000)});
      if(read.ok){const rows=await read.json();if(Array.isArray(rows))result.observed=rows.filter(x=>x.slug===slug);}
    }catch{}
+   if(key==='events'){
+     try{
+       const found=result.observed?.[0];
+       if(found){const read=await fetch(new URL('events/'+found.id,site.eventRestBase),{headers,redirect:'error',signal:AbortSignal.timeout(30000)});
+         if(read.ok){const event=await read.json();result.eventObserved={start_date:event.start_date,end_date:event.end_date,timezone:event.timezone,all_day:event.all_day,website:event.website,cost:event.cost,cost_details:event.cost_details};}
+       }
+     }catch{}
+   }
    report.results.push(result);
  }
  writeFileSync('blockweeks-draft-smoke-result.json',JSON.stringify(report,null,2)+'\n');
