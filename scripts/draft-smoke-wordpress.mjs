@@ -2,6 +2,7 @@
 import {writeFileSync} from 'node:fs';
 import {loadSite,assert} from './common.mjs';
 import {importArticle} from './import-wordpress.mjs';
+import {payloadFor,verifyWPPost} from './channel-adapters.mjs';
 const report={checkedAt:new Date().toISOString(),draftOnly:true,results:[]};
 const username=process.env.WP_BLOCKWEEKS_USERNAME,password=process.env.WP_BLOCKWEEKS_APP_PASSWORD;
 assert(username&&password&&!username.includes(':'),'Missing WordPress credentials');
@@ -23,7 +24,31 @@ for(const [key,label,category] of [['articles','文章',207],['docs','知识库'
  source:'codex-scheduled-task',categoryIds:[category],tagIds:[],
  sources:[{title:'BlockWeeks 自动化接口测试说明',url:'https://blockweeks.com',kind:'official',checkedAt:new Date().toISOString()}]};
  if(key==='events')article.event={startDate:'2030-01-01 10:00:00',endDate:'2030-01-01 11:00:00',timezone:'Asia/Shanghai',allDay:false,website:'https://blockweeks.com',cost:'0'};
- try{report.results.push(await importArticle(article,testSite));}
+ try{
+   // Repair only the known smoke fixture that the plugin saved with an empty cost.
+   if(key==='events'){
+     const u=new URL(site.collection,site.restBase);
+     for(const [k,v] of Object.entries({slug,context:'edit',status:'any',per_page:'100'}))u.searchParams.set(k,v);
+     const lookup=await fetch(u,{headers,redirect:'error',signal:AbortSignal.timeout(30000)});
+     assert(lookup.ok,'Smoke event repair lookup failed');
+     const rows=await lookup.json();
+     assert(Array.isArray(rows),'Unexpected smoke lookup');
+     const matches=rows.filter(x=>x.slug===slug);
+     assert(matches.length<=1,'Multiple smoke events');
+     if(matches.length){
+       verifyWPPost(matches[0],article,testSite);
+       const url=new URL('events/'+matches[0].id,site.eventRestBase);
+       const read=await fetch(url,{headers,redirect:'error',signal:AbortSignal.timeout(30000)});
+       assert(read.ok,'Smoke native read failed');
+       const native=await read.json();
+       if(native.cost===''&&Array.isArray(native.cost_details?.values)&&native.cost_details.values.length===0){
+         const fixed=await fetch(url,{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify(payloadFor(article,testSite)),redirect:'error',signal:AbortSignal.timeout(30000)});
+         assert(fixed.ok,'Smoke zero-cost repair failed; inspect before retry');
+       }
+     }
+   }
+   report.results.push(await importArticle(article,testSite));
+ }
  catch(e){
    const result={channel:site.siteId,ok:false,error:e.message};
    // Inspect possible partial creation using GET only. Do not retry a write.
