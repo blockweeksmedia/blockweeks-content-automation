@@ -42,7 +42,7 @@ jobs:
               const r=await fetch(base+path,{headers:authenticated?auth:{},redirect:'error',signal:AbortSignal.timeout(30000)});
               let b;try{b=await r.json();}catch{report.checks.push({label,status:r.status,error:'Non-JSON response'});return;}
               const entry={label,status:r.status,total:r.headers.get('x-wp-total')};
-              if(account) entry.permissions=Object.fromEntries(['edit_posts','publish_posts','edit_others_posts','edit_docs','publish_docs','edit_qa_posts','publish_qa_posts','edit_tribe_events','publish_tribe_events'].map(k=>[k,Boolean(b.capabilities?.[k])]));
+              if(account) {entry.roles=Array.isArray(b.roles)?b.roles:[];entry.permissions=Object.fromEntries(['edit_posts','publish_posts','edit_others_posts','edit_docs','publish_docs','edit_qa_posts','publish_qa_posts','edit_tribe_events','publish_tribe_events'].map(k=>[k,Boolean(b.capabilities?.[k])]));}
               else if(Array.isArray(b)) {entry.count=b.length;entry.sample=b.slice(0,3).map(x=>({id:x.id,title:x.title?.rendered??x.title}));}
               else if(Array.isArray(b.events)){entry.count=b.events.length;entry.total=b.total;entry.sample=b.events.slice(0,3).map(x=>({id:x.id,title:x.title}));}
               else entry.code=String(b.code??'unknown').replace(/[^a-z0-9_-]/gi,'');
@@ -54,7 +54,7 @@ jobs:
             await check(c+' public',path,false);
             await check(c+' authenticated view',path,true);
           }
-          await check('account capabilities','wp/v2/users/me?context=edit&_fields=capabilities',true,true);
+          await check('account capabilities','wp/v2/users/me?context=edit&_fields=capabilities,roles',true,true);
           await check('native event public','tribe/events/v1/events?per_page=3',false);
           await check('native event authenticated','tribe/events/v1/events?per_page=3',true);
           writeFileSync('blockweeks-inventory-diagnostics.json',JSON.stringify(report,null,2)+'\n');
