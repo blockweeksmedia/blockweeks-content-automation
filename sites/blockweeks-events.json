@@ -1,0 +1,35 @@
+{
+  "siteId": "blockweeks-events",
+  "name": "BlockWeeks events",
+  "enabled": false,
+  "url": "https://blockweeks.com",
+  "restBase": "https://blockweeks.com/wp-json/wp/v2/",
+  "timezone": "Asia/Shanghai",
+  "githubRepository": "blockweeksmedia/blockweeks-content-automation",
+  "baseBranch": "main",
+  "mergeMode": "manual",
+  "status": "draft",
+  "minimumCharacters": 200,
+  "maximumCharacters": 6000,
+  "categories": [],
+  "tags": [],
+  "credentials": {
+    "usernameEnv": "WP_BLOCKWEEKS_USERNAME",
+    "passwordEnv": "WP_BLOCKWEEKS_APP_PASSWORD"
+  },
+  "adapter": "tec",
+  "collection": "tribe_events",
+  "categoryField": "tribe_events_cat",
+  "tagField": "tags",
+  "allowedCategories": [
+    201,
+    197,
+    200,
+    196
+  ],
+  "allowedTags": [],
+  "supportsExcerpt": true,
+  "supportsFeaturedMedia": true,
+  "importGroup": "blockweeks",
+  "eventRestBase": "https://blockweeks.com/wp-json/tribe/events/v1/"
+}

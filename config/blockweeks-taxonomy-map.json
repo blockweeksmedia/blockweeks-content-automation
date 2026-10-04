@@ -1,0 +1,515 @@
+{
+  "articles": {
+    "collection": "posts",
+    "categoryField": "categories",
+    "categories": [
+      {
+        "id": 1227,
+        "name": "KOL",
+        "slug": "kol",
+        "parent": 0,
+        "count": 215
+      },
+      {
+        "id": 7971,
+        "name": "商业",
+        "slug": "business",
+        "parent": 0,
+        "count": 401
+      },
+      {
+        "id": 1,
+        "name": "教程",
+        "slug": "study",
+        "parent": 0,
+        "count": 141
+      },
+      {
+        "id": 29,
+        "name": "深度",
+        "slug": "article",
+        "parent": 0,
+        "count": 9009
+      },
+      {
+        "id": 28,
+        "name": "热议",
+        "slug": "hot",
+        "parent": 0,
+        "count": 140
+      },
+      {
+        "id": 1710,
+        "name": "行情",
+        "slug": "hq",
+        "parent": 0,
+        "count": 1352
+      },
+      {
+        "id": 227,
+        "name": "观点",
+        "slug": "view",
+        "parent": 0,
+        "count": 12645
+      },
+      {
+        "id": 207,
+        "name": "资讯",
+        "slug": "news",
+        "parent": 0,
+        "count": 10782
+      }
+    ],
+    "tagField": "tags",
+    "tags": [],
+    "tagCatalogComplete": false
+  },
+  "docs": {
+    "collection": "docs",
+    "categoryField": "doc_category",
+    "categories": [
+      {
+        "id": 216,
+        "name": "Defi专区",
+        "slug": "defi",
+        "parent": 0,
+        "count": 13
+      },
+      {
+        "id": 205,
+        "name": "Solana专区",
+        "slug": "solana",
+        "parent": 0,
+        "count": 10
+      },
+      {
+        "id": 335,
+        "name": "交易专区",
+        "slug": "trade",
+        "parent": 0,
+        "count": 5
+      },
+      {
+        "id": 194,
+        "name": "交易所专区",
+        "slug": "exchange",
+        "parent": 0,
+        "count": 6
+      },
+      {
+        "id": 193,
+        "name": "加密货币专区",
+        "slug": "cryptocurrency",
+        "parent": 0,
+        "count": 6
+      },
+      {
+        "id": 256,
+        "name": "技术专区",
+        "slug": "tech",
+        "parent": 0,
+        "count": 12
+      }
+    ],
+    "tagField": "doc_tag",
+    "tags": [
+      {
+        "id": 6651,
+        "name": "Base",
+        "slug": "base",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1038,
+        "name": "Bonk",
+        "slug": "bonk",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 6652,
+        "name": "BP20",
+        "slug": "bp20",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 294,
+        "name": "ByBit",
+        "slug": "bybit",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 215,
+        "name": "CoinBase",
+        "slug": "coinbase",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 217,
+        "name": "defi",
+        "slug": "defi",
+        "parent": 0,
+        "count": 3
+      },
+      {
+        "id": 1232,
+        "name": "Doge",
+        "slug": "doge",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1558,
+        "name": "EIP-7999",
+        "slug": "eip-7999",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 274,
+        "name": "ETF",
+        "slug": "etf",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 979,
+        "name": "Gas",
+        "slug": "gas",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1154,
+        "name": "Jetton",
+        "slug": "jetton",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 271,
+        "name": "Jito",
+        "slug": "jito",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 272,
+        "name": "Jupiter",
+        "slug": "jupiter",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 336,
+        "name": "K线图",
+        "slug": "k%e7%ba%bf%e5%9b%be",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1037,
+        "name": "LetsBonk",
+        "slug": "letsbonk",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 981,
+        "name": "LP",
+        "slug": "lp",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 980,
+        "name": "MEV",
+        "slug": "mev",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 352,
+        "name": "MEXC",
+        "slug": "mexc",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 214,
+        "name": "OKX",
+        "slug": "okx",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 257,
+        "name": "PancakeSwap",
+        "slug": "pancakeswap",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 978,
+        "name": "PTBs",
+        "slug": "ptbs",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 269,
+        "name": "PUMP",
+        "slug": "pump",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 258,
+        "name": "Router",
+        "slug": "router",
+        "parent": 0,
+        "count": 2
+      },
+      {
+        "id": 270,
+        "name": "Solana",
+        "slug": "solana",
+        "parent": 0,
+        "count": 3
+      },
+      {
+        "id": 273,
+        "name": "Solana ETF",
+        "slug": "solana-etf",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 976,
+        "name": "Sui",
+        "slug": "sui",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1155,
+        "name": "TON",
+        "slug": "ton",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 927,
+        "name": "TRON",
+        "slug": "tron",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 218,
+        "name": "uniswap",
+        "slug": "uniswap",
+        "parent": 0,
+        "count": 2
+      },
+      {
+        "id": 1102,
+        "name": "USD1",
+        "slug": "usd1",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1636,
+        "name": "USDC",
+        "slug": "usdc",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1637,
+        "name": "USDC.e",
+        "slug": "usdc-e",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 213,
+        "name": "交易所",
+        "slug": "%e4%ba%a4%e6%98%93%e6%89%80",
+        "parent": 0,
+        "count": 5
+      },
+      {
+        "id": 1559,
+        "name": "以太坊",
+        "slug": "%e4%bb%a5%e5%a4%aa%e5%9d%8a",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 208,
+        "name": "加密货币",
+        "slug": "%e5%8a%a0%e5%af%86%e8%b4%a7%e5%b8%81",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 212,
+        "name": "币安",
+        "slug": "%e5%b8%81%e5%ae%89",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 210,
+        "name": "比特币",
+        "slug": "%e6%af%94%e7%89%b9%e5%b8%81",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1976,
+        "name": "波场",
+        "slug": "%e6%b3%a2%e5%9c%ba",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1124,
+        "name": "滑点",
+        "slug": "%e6%bb%91%e7%82%b9",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 1233,
+        "name": "狗狗币",
+        "slug": "%e7%8b%97%e7%8b%97%e5%b8%81",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 209,
+        "name": "知识科普",
+        "slug": "%e7%9f%a5%e8%af%86%e7%a7%91%e6%99%ae",
+        "parent": 0,
+        "count": 2
+      },
+      {
+        "id": 1246,
+        "name": "税率",
+        "slug": "%e7%a8%8e%e7%8e%87",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 211,
+        "name": "稳定币",
+        "slug": "%e7%a8%b3%e5%ae%9a%e5%b8%81",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 808,
+        "name": "精度",
+        "slug": "%e7%b2%be%e5%ba%a6",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 977,
+        "name": "量子计算机",
+        "slug": "%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e6%9c%ba",
+        "parent": 0,
+        "count": 1
+      },
+      {
+        "id": 242,
+        "name": "门头沟",
+        "slug": "%e9%97%a8%e5%a4%b4%e6%b2%9f",
+        "parent": 0,
+        "count": 1
+      }
+    ],
+    "tagCatalogComplete": true
+  },
+  "forum": {
+    "collection": "qa_post",
+    "categoryField": "qa_cat",
+    "categories": [
+      {
+        "id": 1817,
+        "name": "广告宣传",
+        "slug": "marketing",
+        "parent": 0,
+        "count": 0
+      },
+      {
+        "id": 1819,
+        "name": "建言献策",
+        "slug": "suggestion",
+        "parent": 0,
+        "count": 0
+      },
+      {
+        "id": 1818,
+        "name": "招聘求职",
+        "slug": "job",
+        "parent": 0,
+        "count": 0
+      },
+      {
+        "id": 1816,
+        "name": "综合讨论",
+        "slug": "talk",
+        "parent": 0,
+        "count": 1
+      }
+    ],
+    "tagField": null,
+    "tags": [],
+    "tagCatalogComplete": true
+  },
+  "events": {
+    "collection": "tribe_events",
+    "categoryField": "tribe_events_cat",
+    "categories": [
+      {
+        "id": 201,
+        "name": "国内活动",
+        "slug": "domestic",
+        "parent": 0,
+        "count": 4
+      },
+      {
+        "id": 197,
+        "name": "国外活动",
+        "slug": "foreign",
+        "parent": 0,
+        "count": 15
+      },
+      {
+        "id": 200,
+        "name": "线上活动",
+        "slug": "online",
+        "parent": 0,
+        "count": 0
+      },
+      {
+        "id": 196,
+        "name": "线下活动",
+        "slug": "offline",
+        "parent": 0,
+        "count": 17
+      }
+    ],
+    "tagField": "tags",
+    "tags": [],
+    "tagCatalogComplete": false
+  }
+}
