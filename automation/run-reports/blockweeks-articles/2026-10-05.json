@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-05",
+  "siteId": "blockweeks-articles",
+  "outcome": "skipped",
+  "reasonCode": "duplicate",
+  "queries": [
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:x.com 稳定币 支付 after:2026-10-02 before:2026-10-06"
+    },
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:x.com 以太坊 钱包 授权 after:2026-10-02 before:2026-10-06"
+    },
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:reddit.com 加密 稳定币 2026 October"
+    },
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:x.com Solana 体验 after:2026-10-02 before:2026-10-06"
+    },
+    {
+      "language": "zh",
+      "query": "site:x.com/status 稳定币 支付 \"2026\"",
+      "engine": "system2"
+    },
+    {
+      "language": "zh",
+      "query": "site:x.com ScamSniffer_CN Permit2 LINK",
+      "engine": "system2"
+    },
+    {
+      "language": "en",
+      "query": "site:reddit.com/r/CryptoCurrency/comments stablecoin \"October\" \"2026\"",
+      "engine": "system2"
+    },
+    {
+      "language": "en",
+      "query": "site:reddit.com/r/ethereum/comments wallet \"October\" \"2026\"",
+      "engine": "system2"
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://x.com/solana/status/2106723512631095559",
+      "language": "en",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "unreadable: 原帖读取返回403 Forbidden；搜索标注today不能替代实际发帖时间。"
+    },
+    {
+      "url": "https://www.reddit.com/r/ethereum/comments/1wx76xi/daily_general_discussion_october_04_2026/",
+      "language": "en",
+      "publishedAt": "2026-10-04",
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "unreadable: 原帖读取返回DisabledError，不能仅用搜索摘要成稿。"
+    },
+    {
+      "url": "https://www.reddit.com/r/ethereum/comments/1wweo0e/daily_general_discussion_october_03_2026/",
+      "language": "en",
+      "publishedAt": "2026-10-03",
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "unreadable: 原帖读取返回DisabledError，不能仅用搜索摘要成稿。"
+    },
+    {
+      "url": "https://www.reddit.com/r/ethereum/comments/1wvl4li/daily_general_discussion_october_02_2026/",
+      "language": "en",
+      "publishedAt": "2026-10-02",
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "unreadable: 原帖读取返回DisabledError，不能仅用搜索摘要成稿。"
+    },
+    {
+      "url": "https://www.reddit.com/r/ethereum/comments/1wuqooj/daily_general_discussion_october_01_2026/",
+      "language": "en",
+      "publishedAt": "2026-10-01",
+      "replyAt": null,
+      "readable": true,
+      "rejectionReason": "duplicate: 可直接读取MetaMask质押基础设施安全事件讨论及回复，且官方10月1日公告可核实；但网站既有325430已覆盖事件、非托管本金与运营收益风险，326149覆盖基础设施风险。没有核实出足够新的独立文章角度，不重复写稿。页面相对回复时间与缓存时间无法确定绝对时刻，replyAt留null。"
+    }
+  ],
+  "mainSha": "60781fde25b8fdb97fbcbc467078d53e8cb4ab37",
+  "checkedAt": "2026-10-05T08:52:30.167Z",
+  "candidateCount": 5,
+  "summary": "中文定向检索未获得可读合格原帖，已换引擎并明确检索英文补充；不是全网零结果。5个原帖候选中4个不可读，1个可读但与网站既有内容重复。未创建内容PR、未改topics、未投递WordPress。",
+  "verificationUrls": [
+    "https://metamask.io/news/user-update",
+    "https://blockweeks.com/news/325430",
+    "https://blockweeks.com/news/326149"
+  ],
+  "additionalReadFailures": [
+    {
+      "url": "https://x.com/ether_fi/status/2105477593768300920?s=20",
+      "error": "403 Forbidden"
+    },
+    {
+      "url": "https://x.com/LidoFinance/status/2105443679905235344?s=20",
+      "error": "403 Forbidden"
+    }
+  ],
+  "dateNote": "publishedAt为可确认的日历日期，不编造时刻或时区；未把抓取日期视为发帖日期。",
+  "dedup": "main无本频道当日稿件或运行报告；开放PR查询为空；读取main发布标题索引并额外搜索site:blockweeks.com，直接读取两篇已有文章确认重复。未进行全站语义查重。"
+}
