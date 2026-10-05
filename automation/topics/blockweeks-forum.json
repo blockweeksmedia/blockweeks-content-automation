@@ -20,11 +20,14 @@
   {
     "id": "bw-forum-003",
     "title": "DeFi产品设计与实际体验的讨论（候选 3）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-05",
+    "articleSlug": "noncustodial-staking-incident-disclosure",
+    "articleTitle": "非托管质押出了安全事件，你最想先看到哪些信息？"
   },
   {
     "id": "bw-forum-004",
