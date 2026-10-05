@@ -1,0 +1,29 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-05",
+  "topicId": "bw-forum-003",
+  "title": "非托管质押出了安全事件，你最想先看到哪些信息？",
+  "slug": "noncustodial-staking-incident-disclosure",
+  "excerpt": "从MetaMask基础设施事件讨论非托管质押产品的风险说明与信息披露。",
+  "content": "<p>10月1日，Reddit 的 r/ethereum 英文讨论串里，有用户把 MetaMask 钱包和它的质押基础设施分开讨论。看到同一个品牌出现在安全消息里，普通用户很容易先问：我钱包里的币会不会受影响？</p><p>MetaMask 的<a href=\"https://metamask.io/news/user-update\">10月1日官方更新</a>称，调查当时未发现钱包或客户资金受影响的迹象，并已与合作伙伴预防性退出受影响的验证者。9月30日的说明还强调，它不替客户持有质押提现私钥。这是截至该次更新的调查结论，不代表所有风险都已查清。</p><p>问题是，“非托管”这三个字，能让用户理解多少？提现密钥由谁控制、哪些服务可能中断、退出进度怎么查，似乎比一句资金安全更能帮助判断。假如你使用的质押服务遇到类似事件，你最希望公告第一时间说清哪一项信息，为什么？</p><p><a href=\"https://www.reddit.com/r/ethereum/comments/1wuqooj/comment/pd5foj9/\">英文讨论原帖</a>（10月1日讨论串；10月5日核对）。</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "Reddit r/ethereum October 01 discussion: MetaMask infrastructure incident (English)",
+      "url": "https://www.reddit.com/r/ethereum/comments/1wuqooj/comment/pd5foj9/",
+      "kind": "reddit",
+      "publishedAt": "2026-10-01",
+      "checkedAt": "2026-10-05T08:54:01.308Z"
+    },
+    {
+      "title": "MetaMask User update, October 1, 2026",
+      "url": "https://metamask.io/news/user-update",
+      "kind": "official",
+      "publishedAt": "2026-10-01",
+      "checkedAt": "2026-10-05T08:54:01.308Z"
+    }
+  ]
+}
