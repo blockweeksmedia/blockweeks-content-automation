@@ -1,0 +1,41 @@
+{
+  "siteId": "blockweeks-events",
+  "date": "2026-10-05",
+  "topicId": "bw-events-001",
+  "title": "Devcon 8 India：2026年11月3日至6日，孟买以太坊开发者大会",
+  "slug": "devcon-8-india-2026",
+  "excerpt": "以太坊基金会主办的 Devcon 8 将于2026年11月3日至6日在印度孟买 Jio World Centre 举行，涵盖协议、隐私、安全与开源技术等议题。",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    197,
+    196
+  ],
+  "content": "<p>Devcon 8 India 将于2026年11月3日至6日在印度孟买 Jio World Centre 举行，由以太坊基金会主办。这是一场为期四天的线下大会，面向以太坊及开源技术社区的开发者、研究者、维护者，以及希望了解去中心化系统的参与者。活动名称、日期和主办方信息可在<a href=\"https://devcon.org/en/\">大会官网</a>核对。</p><p>官方售票页及日历标注的起止时间为11月3日09:30至11月6日17:00，使用印度当地时区 Asia/Kolkata（UTC+5:30）。会场位于孟买 Bandra East 的 Bandra Kurla Complex，地址为 G Block、Jio World Centre，邮编400051。以上是整场活动的起止时间，各场演讲与工作坊的安排应另行查看官方日程。</p><p>本届官网列出的议题包括核心协议、隐私与用户同意、安全、应用密码学、无许可网络，以及开放且可验证的技术栈。活动形式包含演讲、工作坊和社区交流，读者可以按自己的研究或开发方向查看议程，不必把参会理解为项目投资或代币推介。</p><p>报名请进入<a href=\"https://tickets.devcon.org/\">官方售票页面</a>。普通门票与社区、学生、建设者等票种的价格和资格条件不同；部分优惠需要验证资格或申请审核，不能将个别免费票种理解为整场活动免费。官网说明门票涵盖四天入场、餐饮与活动周边，实际可购买票种及支付金额以结账页面为准。</p>",
+  "sources": [
+    {
+      "title": "Devcon 8 India 官方网站",
+      "url": "https://devcon.org/en/",
+      "kind": "official",
+      "checkedAt": "2026-10-05T15:29:00+08:00"
+    },
+    {
+      "title": "Devcon 8 India 官方售票",
+      "url": "https://tickets.devcon.org/",
+      "kind": "official",
+      "checkedAt": "2026-10-05T15:29:00+08:00"
+    },
+    {
+      "title": "Devcon 8 官方日历（时间与IANA时区）",
+      "url": "https://tickets.devcon.org/ical",
+      "kind": "official",
+      "checkedAt": "2026-10-05T15:28:24+08:00"
+    }
+  ],
+  "event": {
+    "startDate": "2026-11-03 09:30:00",
+    "endDate": "2026-11-06 17:00:00",
+    "timezone": "Asia/Kolkata",
+    "allDay": false,
+    "website": "https://devcon.org/en/"
+  }
+}
