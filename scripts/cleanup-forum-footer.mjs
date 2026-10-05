@@ -15,6 +15,10 @@ export async function cleanupForumFooter(original, site, request) {
   const rows = await request(query);
   assert(Array.isArray(rows) && rows.length === 1, 'Expected exactly one existing forum draft; no creation allowed');
   const post = rows[0];
+  if (post.content?.raw !== original.content && post.content?.raw !== corrected.content) {
+    const normalize = value => typeof value === 'string' ? value.replace(/\\s+/g,'') : null;
+    console.error(JSON.stringify({diagnostic:'forum-footer-content-difference',id:post.id,status:post.status,contentKeys:Object.keys(post.content??{}),rawLength:post.content?.raw?.length,originalLength:original.content.length,endsWithExactFooter:post.content?.raw?.trimEnd().endsWith(footer),sameIgnoringWhitespace:normalize(post.content?.raw)===normalize(original.content),alreadyCleanIgnoringWhitespace:normalize(post.content?.raw)===normalize(corrected.content)}));
+  }
   assert(post.content?.raw === original.content || post.content?.raw === corrected.content, 'Content changed externally; refuse overwrite');
   verifyWPPost(post, { ...original, content: post.content.raw }, site);
   const target = new URL(`qa_post/${post.id}`, site.restBase);
