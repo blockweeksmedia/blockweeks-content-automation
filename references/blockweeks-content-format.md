@@ -10,7 +10,7 @@
 
 活动新增必填 event：startDate、endDate（YYYY-MM-DD HH:mm:ss，当地时间）、timezone（IANA 时区）、allDay（布尔）、website（HTTPS 官方地址）。可选 cost（原样字符串，收费不明时省略，不能自动写 0）、venueId、organizerIds。官网来源必须在 sources 中，并与 website 同源。结束时间晚于开始时间。活动详情中的未知信息不要编造。
 
-content 使用原套件 HTML 白名单。建议在正文保留读者可点击的来源链接。JSON sources 只用于审计，不会自动添加到 WordPress 正文。
+content 使用原套件 HTML 白名单。必要事实可在对应句保留读者可点击的来源链接；论坛末尾不附原帖链接、讨论串/核对日期或来源清单。JSON sources 只用于审计，不会自动添加到 WordPress 正文。
 
 slug 必须稳定：活动以大会名称及届次/年份形成 slug，不把每次执行日期加入 slug。四类稿件命名不能用于掩盖重复内容。
 

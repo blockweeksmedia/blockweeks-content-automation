@@ -4,6 +4,28 @@ import { readFileSync } from 'node:fs';
 import { validateArticle, validateSite } from './common.mjs';
 import { importArticle } from './import-wordpress.mjs';
 import { payloadFor, verifyTECEvent } from './channel-adapters.mjs';
+import { cleanupForumFooter, targetFile, footer } from './cleanup-forum-footer.mjs';
+
+test('forum footer cleanup removes only exact suffix and reads back same draft', async()=>{
+ const a=JSON.parse(readFileSync(targetFile)),s=config('forum');
+ let p=stored(a,s), writes=0;
+ const r=await cleanupForumFooter(a,s,async(url,opt={})=>{
+  if(opt.method==='POST'){writes++;assert.deepEqual(Object.keys(JSON.parse(opt.body)),['content']);p={...p,content:{raw:JSON.parse(opt.body).content}};return p;}
+  return new URL(url).pathname.endsWith('/qa_post')?[p]:p;
+ });
+ assert.equal(writes,1);assert.equal(r.id,42);assert.equal(r.verified,true);assert.equal(p.content.raw,a.content.slice(0,-footer.length));
+ const again=await cleanupForumFooter(a,s,async(url)=>new URL(url).pathname.endsWith('/qa_post')?[p]:p);
+ assert.equal(again.reused,true);
+});
+
+test('forum footer cleanup refuses published, missing and externally edited posts', async()=>{
+ const a=JSON.parse(readFileSync(targetFile)),s=config('forum');
+ for(const rows of [[],[{...stored(a,s),status:'publish'}],[{...stored(a,s),content:{raw:'changed'}}]]){
+  let writes=0;
+  await assert.rejects(()=>cleanupForumFooter(a,s,async(url,opt={})=>{if(opt.method==='POST')writes++;return rows;}));
+  assert.equal(writes,0);
+ }
+});
 
 const config = channel => ({...JSON.parse(readFileSync(new URL(`../sites/blockweeks-${channel}.json`,import.meta.url))),enabled:true,minimumCharacters:4});
 const article = (channel,extra={}) => ({siteId:`blockweeks-${channel}`,date:'2026-10-04',topicId:'topic-1',title:'真实问题测试',slug:'discussion-test',excerpt:'测试摘要',content:'<p>用于核对路由与栏目的一段内容。</p>',source:'codex-scheduled-task',categoryIds:[config(channel).allowedCategories[0]],sources:[{title:'原始来源',url:'https://example.org/announcement',kind:'official',checkedAt:'2026-10-04T10:00:00Z'}],...extra});
