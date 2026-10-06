@@ -68,11 +68,14 @@
   {
     "id": "bw-forum-008",
     "title": "近期生态变化对普通用户的影响（候选 8）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-06",
+    "articleSlug": "virtuals-app-ai-wallet-trading-permissions",
+    "articleTitle": "AI进群帮你管钱，你会给它多大交易权限？"
   },
   {
     "id": "bw-forum-009",
