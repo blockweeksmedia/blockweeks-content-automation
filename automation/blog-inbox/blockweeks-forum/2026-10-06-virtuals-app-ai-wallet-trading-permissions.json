@@ -1,0 +1,47 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-06",
+  "topicId": "bw-forum-008",
+  "title": "AI进群帮你管钱，你会给它多大交易权限？",
+  "slug": "virtuals-app-ai-wallet-trading-permissions",
+  "excerpt": "从Virtuals App的封闭测试讨论AI代理获得钱包与市场权限后，用户愿意开放到哪一级。",
+  "content": "<p><a href=\"https://x.com/virtuals_io/status/2107108810007667041\">Virtuals Protocol 昨晚公布</a>了一款封闭测试中的个人 AI：它带钱包和市场访问权限，可以待在群聊里听大家聊想法、研究投资，甚至按任务调动资金。今天早上，中文账号 @oragnes 也围绕这次更新展开讨论，关注点已经从“Agent 发币”转到“Agent 能不能真的替人管钱”。</p><p>这个产品最吸引人的地方，也是最让人犹豫的地方。让 AI 查资料、盯条件很省事；但一旦它能签名、转账或下单，授权范围、单笔上限、白名单和撤销方式就比“策略聪不聪明”更重要。群聊里的随口一句话，显然也不该直接变成一笔交易。</p><p>如果这类产品开放给你，你会把权限开到哪一级：只读研究、每笔手动确认，还是限定金额和币种后允许自动交易？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "Virtuals Protocol introduces Virtuals App closed beta",
+      "url": "https://x.com/virtuals_io/status/2107108810007667041",
+      "kind": "x",
+      "publishedAt": "2026-10-05T14:01:03.151Z",
+      "checkedAt": "2026-10-06T09:57:30+08:00"
+    },
+    {
+      "title": "比特币橙子Trader讨论Virtuals App",
+      "url": "https://x.com/oragnes/status/2107268990049669284",
+      "kind": "x",
+      "publishedAt": "2026-10-06T00:37:33.049Z",
+      "checkedAt": "2026-10-06T09:57:30+08:00"
+    },
+    {
+      "title": "Virtuals Protocol official website",
+      "url": "https://www.virtuals.io/",
+      "kind": "official",
+      "checkedAt": "2026-10-06T09:57:30+08:00"
+    },
+    {
+      "title": "Virtuals App announcement mirror with visible replies",
+      "url": "https://zamantika.com/virtuals_io/status/2107108810007667041",
+      "kind": "other",
+      "checkedAt": "2026-10-06T09:57:30+08:00"
+    },
+    {
+      "title": "中文讨论公开转载",
+      "url": "https://zamantika.com/oragnes/status/2107268990049669284",
+      "kind": "other",
+      "checkedAt": "2026-10-06T09:57:30+08:00"
+    }
+  ]
+}
