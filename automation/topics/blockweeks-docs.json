@@ -2,10 +2,13 @@
   {
     "id": "bw-docs-001",
     "title": "DeFi借贷健康因子如何变化：抵押率、利息与清算阈值",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       216
-    ]
+    ],
+    "usedAt": "2026-10-06",
+    "articleSlug": "defi-lending-health-factor",
+    "articleTitle": "DeFi借贷健康因子怎么变：抵押物、利息与清算阈值"
   },
   {
     "id": "bw-docs-002",
