@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-06",
+  "siteId": "blockweeks-articles",
+  "outcome": "skipped",
+  "reasonCode": "unsuitable",
+  "mainSha": "52033f28942cc4cc14d9a7c68096a189bcae85bd",
+  "checkedAt": "2026-10-06T09:04:58+08:00",
+  "accountUrls": [
+    "https://x.com/_FORAB",
+    "https://x.com/0xVeryBigOrange",
+    "https://x.com/oragnes",
+    "https://x.com/Meta8Mate",
+    "https://x.com/mk66623",
+    "https://x.com/WuBlockchain"
+  ],
+  "queries": [
+    {
+      "engine": "system2",
+      "language": "zh",
+      "query": "site:x.com/_FORAB/status after:2026-09-29"
+    },
+    {
+      "engine": "system2",
+      "language": "zh",
+      "query": "site:x.com/0xVeryBigOrange/status after:2026-09-29"
+    },
+    {
+      "engine": "system2",
+      "language": "zh",
+      "query": "site:x.com/oragnes/status after:2026-09-29"
+    },
+    {
+      "engine": "system2",
+      "language": "zh",
+      "query": "site:x.com/Meta8Mate/status OR site:x.com/mk66623/status after:2026-09-29"
+    },
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:x.com/_FORAB/status",
+      "recencyDays": 7
+    },
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:x.com/0xVeryBigOrange/status",
+      "recencyDays": 7
+    },
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:x.com/oragnes/status",
+      "recencyDays": 7
+    },
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:x.com/Meta8Mate/status OR site:x.com/mk66623/status",
+      "recencyDays": 7
+    },
+    {
+      "engine": "system1",
+      "language": "en",
+      "query": "site:x.com/WuBlockchain/status",
+      "recencyDays": 7
+    },
+    {
+      "engine": "system1",
+      "language": "zh",
+      "query": "site:x.com/oragnes/status \"Virtuals App\""
+    },
+    {
+      "engine": "system1",
+      "language": "en",
+      "query": "site:virtuals.io \"Virtuals App\" \"October\" \"2026\""
+    },
+    {
+      "engine": "system1",
+      "language": "en",
+      "query": "site:x.com/virtuals_io/status \"closed beta\" \"personal AI\""
+    },
+    {
+      "engine": "system2",
+      "language": "zh",
+      "query": "site:blockweeks.com Virtuals AI 钱包 群聊"
+    },
+    {
+      "engine": "system2",
+      "language": "en",
+      "query": "site:virtuals.io \"Virtuals App\" \"closed beta\""
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://x.com/oragnes/status/2106016347352338544",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "unreadable: 搜索显示3 days ago，但原帖读取Internal Error，单帖转载也无法打开；未确认原帖精确日期和攻击事件一手证据。"
+    },
+    {
+      "url": "https://x.com/mk66623/status/2105707057416679581",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "mirrorReadable": true,
+      "mirrorUrl": "https://zamantika.com/profile/mk66623",
+      "rejectionReason": "unsuitable: 转载可读，但仅标4d，原帖Internal Error；交易所跑路等严重指控未获一手材料核实，不能作为事件事实成稿。"
+    },
+    {
+      "url": "https://x.com/oragnes/status/2107268990049669284",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "mirrorReadable": true,
+      "mirrorUrl": "https://zamantika.com/oragnes/status/2107268990049669284",
+      "rejectionReason": "unsuitable: 转载正文可读，仅26m相对时间；原帖DisabledError。Virtuals官网及白皮书证实基础设施背景，但未确认此帖确切日期及App新发布事实，不能把转载相对时间写成精确发帖日期。"
+    },
+    {
+      "url": "https://x.com/virtuals_io/status/2107108810007667041",
+      "language": "en",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "mirrorReadable": true,
+      "mirrorUrl": "https://zamantika.com/virtuals_io/status/2107108810007667041",
+      "rejectionReason": "unsuitable: 项目英文公告及可见回复的转载可读，仅11h相对时间；官方原帖DisabledError，App入口仅JavaScript占位。一手官网仅核实一般背景，没有独立确认closed beta公告与日期。"
+    },
+    {
+      "url": "https://x.com/WuBlockchain/status/2102436370157555885",
+      "language": "en",
+      "publishedAt": "2026-09-22",
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "outdated: 英文补充账号搜索候选日期为9月22日，超出7天；原帖Internal Error，无可核验近期实质回复。"
+    }
+  ],
+  "notes": [
+    "PR #16 merged confirmed；enabled=true,status=draft,mergeMode=checked。",
+    "五个中文主页403；英文主页Internal Error。首引擎返回不相关X帮助页，另一引擎有原帖候选，但混有旧帖。不能据此断言全网无讨论。",
+    "公开转载只作发现和语气参考，未冒充完整实时动态。未采用未经核验金额、指控或精确日期。",
+    "GitHub当前开放PR为空，日期检索无结果，当日报告404；未创建文章或修改topics。24个pending无需补题。",
+    "核验背景：https://www.virtuals.io/ ，https://whitepaper.virtuals.io/；发现历史Virtuals文章但没有声称全站语义查重完成。",
+    "素材不足属于本次来源访问与证据限制，保留后续运行。"
+  ]
+}
