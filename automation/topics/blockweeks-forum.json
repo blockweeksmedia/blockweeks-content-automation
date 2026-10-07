@@ -50,11 +50,14 @@
   {
     "id": "bw-forum-006",
     "title": "Web3社区治理中的一个具体争议（候选 6）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-07",
+    "articleSlug": "opinion-saft-nondisparagement-clause",
+    "articleTitle": "Opinion解锁争议：KOL轮里的“不贬损”条款"
   },
   {
     "id": "bw-forum-007",
