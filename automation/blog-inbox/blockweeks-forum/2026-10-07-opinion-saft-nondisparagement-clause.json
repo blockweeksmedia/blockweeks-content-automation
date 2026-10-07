@@ -1,0 +1,42 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-07",
+  "topicId": "bw-forum-006",
+  "title": "Opinion解锁争议：KOL轮里的“不贬损”条款",
+  "slug": "opinion-saft-nondisparagement-clause",
+  "excerpt": "从Opinion早期支持者的解锁争议，讨论KOL轮SAFT里的不贬损条款能否成为收回全部未归属代币的依据。",
+  "content": "<p>Opinion 最近的解锁争议里，最扎眼的不是双方在 X 上互相指责，而是项目方据称援引 SAFT 里的“不贬损”和违约条款，收回了几名早期支持者尚未归属的 OPN。相关投资者则称，自己只是公开批评项目进展，停发发生在发帖之后。完整合同和正式通知目前没有公开，所以还不能替任何一方下结论。</p><p>但如果参加 KOL 轮时既要出钱，又要承担“不能公开批评”的约束，投资和付费推广的边界就变得很模糊。尤其当项目方还掌握解锁工具的管理权限，页面显示的总额度并不等于已经拿到手的权利，冲突发生后，谁来认定“贬损”、处罚是否过重，都会变成现实问题。</p><p>如果协议明确写着“不贬损”，你会接受项目方把违反条款的处罚设为收回全部未解锁代币吗？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "陈剑Jason：KOL轮SAFT不贬损条款讨论",
+      "url": "https://x.com/jason_chen998/status/2106919084340515054",
+      "kind": "x",
+      "publishedAt": "2026-10-05",
+      "checkedAt": "2026-10-07T10:08:00+08:00"
+    },
+    {
+      "title": "陈剑Jason：Opinion后续代币解锁被终止的公开指控",
+      "url": "https://x.com/jason_chen998/status/2106750841378209984",
+      "kind": "x",
+      "publishedAt": "2026-10-04",
+      "checkedAt": "2026-10-07T10:08:00+08:00"
+    },
+    {
+      "title": "吴说：Opinion社群公告及SAFT条款转述",
+      "url": "https://x.com/wublockchain12/status/2106950142373068949",
+      "kind": "x",
+      "publishedAt": "2026-10-05",
+      "checkedAt": "2026-10-07T10:08:00+08:00"
+    },
+    {
+      "title": "Opinion官方账号",
+      "url": "https://x.com/opinionlabsxyz",
+      "kind": "official",
+      "checkedAt": "2026-10-07T10:08:00+08:00"
+    }
+  ]
+}
