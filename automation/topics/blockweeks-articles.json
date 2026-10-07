@@ -44,8 +44,11 @@
   {
     "id": "bw-articles-008",
     "title": "代币设计与治理的新讨论（候选 8）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-07",
+    "articleSlug": "opinion-token-unlock-dispute",
+    "articleTitle": "Opinion陷入代币解锁争议：批评项目后，未归属份额能否被收回？"
   },
   {
     "id": "bw-articles-009",
