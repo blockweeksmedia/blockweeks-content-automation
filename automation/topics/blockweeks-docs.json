@@ -13,10 +13,13 @@
   {
     "id": "bw-docs-002",
     "title": "Solana优先费与计算单元：费用和交易失败的关系",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       205
-    ]
+    ],
+    "usedAt": "2026-10-07",
+    "articleSlug": "solana-priority-fees-compute-units",
+    "articleTitle": "Solana优先费与计算单元：加钱为什么仍可能失败？"
   },
   {
     "id": "bw-docs-003",
