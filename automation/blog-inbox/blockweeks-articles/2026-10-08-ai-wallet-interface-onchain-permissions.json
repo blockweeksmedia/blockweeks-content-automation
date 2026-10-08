@@ -1,0 +1,48 @@
+{
+  "siteId": "blockweeks-articles",
+  "date": "2026-10-08",
+  "topicId": "bw-articles-007",
+  "title": "AI成为钱包的新界面：链上自动执行的权限该怎么收紧？",
+  "slug": "ai-wallet-interface-onchain-permissions",
+  "excerpt": "Vitalik提出AI可能成为新的链上交互界面，OKX也已展示受限自动执行能力。关键不再只是模型会不会操作，而是钱包能否把合约、资产、额度、时限和撤销权写进授权边界。",
+  "content": "<p>10月6日，吴说发布了 Vitalik Buterin 在新加坡 OKX NOW 大会上的演讲整理。演讲里一个很具体的判断引发了讨论：AI 可能成为新的用户界面。Vitalik 举例说，他曾让本地 AI Agent 编写脚本更新 ENS，不再经过传统网页前端；但他同时把 Prompt Injection、交易意图被误解、AI 本身是否可信列为新的风险。</p>\n<p>这不是只存在于演讲里的设想。<a href=\"https://www.okx.com/en-gb/learn/okx-now-recap\">OKX 10月6日的官方回顾</a>称，用户可以把 AI 接入为交易助手，也可以让它在预先设定的限制内执行链上动作；遇到需要人为判断的决定，再回来确认。OKX 此前发布的 OnchainOS 开发工具还列出了查询余额、发起支付、路由兑换、广播交易和跟踪确认等能力。AI 正从“解释一笔交易”走向“替用户组织并执行一串交易”。</p>\n<h2>消失的是按钮，不是授权问题</h2>\n<p>传统钱包把交易参数摆在签名窗口里，用户至少能看到目标地址、代币和数量。AI 界面则可能把这些步骤压缩成一句自然语言：“把闲置资产换成稳定币，价格合适时执行。”体验更顺，但中间多了一层解释：什么算闲置，能接受多大滑点，可以调用哪些合约，失败后能不能重试？只要其中一项理解偏离，链上执行依旧不可逆。</p>\n<p>因此，AI 取代网页并不意味着前端风险自动消失，而是把风险重心从“这个按钮背后调用了什么”移到“这个代理被允许做什么”。恶意网页可能诱导用户签名；恶意提示词、被污染的数据源或有缺陷的 Agent，则可能在用户看不到具体交易构造过程时改变执行意图。钱包如果只在最后弹出一串十六进制数据，所谓 AI 交互反而会让授权更难理解。</p>\n<h2>真正有用的限制要写进账户</h2>\n<p>“AI 会回来问你”是一种产品交互，不能单独充当安全边界。更稳妥的设计，是把权限约束写进智能账户或模块：只允许访问白名单合约，只能动用指定资产，设置单笔和每日额度，限制有效时间，并把高风险操作交回主密钥确认。这样即使 Agent 的判断出错，它能造成的损失也被限定在一个清楚的范围内。</p>\n<p>这类设计已经有可用的技术基础。Safe 的官方文档把限额、时间锁和白名单列为保护 AI Agent 交易的措施；模块还可以给外部账户授予每日额度等有限执行权。账户抽象标准也在讨论会话密钥、角色权限与支出上限。它们并不保证 Agent 正确，却能把“相信这个模型”变成更容易检查的“允许这把临时钥匙在什么条件下做哪些事”。</p>\n<p>委托本身也不能随手完成。<a href=\"https://eips.ethereum.org/EIPS/eip-7702\">EIP-7702 的安全说明</a>明确提醒，改变账户委托是安全关键操作；被授权代码可能拥有很大的账户控制权，钱包需要审计委托目标，并通过标准化模块实现更细的权限。对普通用户来说，这意味着一次看似简单的“开启 AI 功能”，不应等同于把主账户永久交给某段陌生代码。</p>\n<h2>一套可落地的授权顺序</h2>\n<p>AI 钱包可以先从只读开始：分析余额、整理交易方案、模拟结果，但不持有执行权。需要自动化时，再使用隔离账户或小额额度，给短期会话权限，并要求每次执行都留下可读记录。跨链、授权无限额度、转向新地址、修改委托代码和大额交易，应当触发独立确认，而不是沿用一次笼统的“永久允许”。</p>\n<p>确认页也要从展示调用数据升级为复述用户意图。它至少应说明：Agent 要动用哪种资产、最多多少、目的合约是谁、允许多大滑点、权限何时失效，以及如何立即撤销。执行后则需要通知、交易链接和剩余额度，让用户能发现“它做了什么”，而不只是收到一句“任务完成”。</p>\n<p>AI 成为钱包界面的价值，在于把复杂链上操作变成普通人能表达的目标；它最大的危险，也恰恰来自这种抽象。按钮可以减少，签名窗口可以后退，但权限不能变得模糊。真正成熟的 Agent 钱包，不是能够替用户做更多决定，而是能在做决定之前，把可执行范围压缩到即使判断失误也不会失控。</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    29
+  ],
+  "sources": [
+    {
+      "title": "吴说：Vitalik称AI将成为新的UI并带来链上安全挑战",
+      "url": "https://wublock123.com/articles/vitalik-ai-as-new-ui-blockchain-first-security-challenges-59640",
+      "kind": "other",
+      "publishedAt": "2026-10-06",
+      "checkedAt": "2026-10-08T09:22:00+08:00"
+    },
+    {
+      "title": "OKX Now Recap: Building a Financial System for the Next Generation",
+      "url": "https://www.okx.com/en-gb/learn/okx-now-recap",
+      "kind": "official",
+      "publishedAt": "2026-10-06",
+      "checkedAt": "2026-10-08T09:22:00+08:00"
+    },
+    {
+      "title": "Introducing Our AI Toolkit for Developers",
+      "url": "https://www.okx.com/en-us/learn/onchainos-our-ai-toolkit-for-developers",
+      "kind": "official",
+      "publishedAt": "2026-03-03",
+      "checkedAt": "2026-10-08T09:22:00+08:00"
+    },
+    {
+      "title": "EIP-7702: Set Code for EOAs",
+      "url": "https://eips.ethereum.org/EIPS/eip-7702",
+      "kind": "official",
+      "checkedAt": "2026-10-08T09:22:00+08:00"
+    },
+    {
+      "title": "Safe Docs: AI agents powered by Safe Smart Accounts",
+      "url": "https://docs.safe.global/home/ai-overview",
+      "kind": "official",
+      "checkedAt": "2026-10-08T09:22:00+08:00"
+    }
+  ]
+}
