@@ -32,11 +32,14 @@
   {
     "id": "bw-forum-004",
     "title": "链上交易信息展示是否清楚（候选 4）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-08",
+    "articleSlug": "vitalik-ai-ens-signing-summary",
+    "articleTitle": "AI帮Vitalik改ENS：签名前，你要看一句摘要还是完整调用？"
   },
   {
     "id": "bw-forum-005",
