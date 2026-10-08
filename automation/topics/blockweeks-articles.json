@@ -38,8 +38,11 @@
   {
     "id": "bw-articles-007",
     "title": "开发工具或协议发布的社区反馈（候选 7）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-08",
+    "articleSlug": "ai-wallet-interface-onchain-permissions",
+    "articleTitle": "AI成为钱包的新界面：链上自动执行的权限该怎么收紧？"
   },
   {
     "id": "bw-articles-008",
