@@ -24,10 +24,13 @@
   {
     "id": "bw-docs-003",
     "title": "永续合约资金费率与基差有什么区别",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       335
-    ]
+    ],
+    "usedAt": "2026-10-08",
+    "articleSlug": "perpetual-funding-rate-and-basis",
+    "articleTitle": "永续合约资金费率与基差：一个是现金流，一个是价差"
   },
   {
     "id": "bw-docs-004",
