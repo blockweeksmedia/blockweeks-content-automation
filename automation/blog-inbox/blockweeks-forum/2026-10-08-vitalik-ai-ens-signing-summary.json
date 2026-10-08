@@ -1,0 +1,29 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-08",
+  "topicId": "bw-forum-004",
+  "title": "AI帮Vitalik改ENS：签名前，你要看一句摘要还是完整调用？",
+  "slug": "vitalik-ai-ens-signing-summary",
+  "excerpt": "从Vitalik用本地AI更新ENS的例子，讨论AI钱包签名前应该显示简明摘要，还是完整合约调用。",
+  "content": "<p><a href=\"https://wublock123.com/articles/vitalik-ai-as-new-ui-blockchain-first-security-challenges-59640\">Vitalik 在10月6日的演讲里</a>提到，他曾让本地 AI Agent 写脚本更新 ENS Hash，整个过程没有使用传统网页界面，大约花了五分钟。这个例子很具体：以后改域名记录、授权合约，可能不再是点几层按钮，而是直接对 AI 说一句话。</p><p>麻烦在最后一步。钱包如果只显示“更新 ENS”，普通人看不出 AI 到底改了哪条记录、调用哪个合约；可如果仍然扔出一长串 calldata，换成 AI 界面也没让签名更容易核对。比较实用的做法，可能是先给一段人能读懂的操作摘要，再允许展开看目标合约、具体参数和模拟结果。</p><p>如果轮到你签这笔交易，你会接受一句简明摘要，还是必须展开看到 ENS 记录、目标合约和最终调用才会签？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "吴说：Vitalik称AI将成为新的UI并带来链上安全挑战",
+      "url": "https://wublock123.com/articles/vitalik-ai-as-new-ui-blockchain-first-security-challenges-59640",
+      "kind": "other",
+      "publishedAt": "2026-10-06",
+      "checkedAt": "2026-10-08T10:12:00+08:00"
+    },
+    {
+      "title": "OKX Now Recap: Building a Financial System for the Next Generation",
+      "url": "https://www.okx.com/en-gb/learn/okx-now-recap",
+      "kind": "official",
+      "publishedAt": "2026-10-06",
+      "checkedAt": "2026-10-08T10:12:00+08:00"
+    }
+  ]
+}
