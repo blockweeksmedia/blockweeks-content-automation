@@ -35,10 +35,13 @@
   {
     "id": "bw-docs-004",
     "title": "交易所API密钥的读取、交易和提现权限如何区分",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       194
-    ]
+    ],
+    "usedAt": "2026-10-09",
+    "articleSlug": "exchange-api-key-read-trade-withdraw-permissions",
+    "articleTitle": "交易所API密钥权限怎么选：只读、交易与提现的风险边界"
   },
   {
     "id": "bw-docs-005",
