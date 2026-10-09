@@ -92,8 +92,11 @@
   {
     "id": "bw-articles-015",
     "title": "开发工具或协议发布的社区反馈（候选 15）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-09",
+    "articleSlug": "grok-bot-x-monitoring-api-boundary",
+    "articleTitle": "Grok Bot接入X监控：降低了阅读门槛，但没有替代数据API"
   },
   {
     "id": "bw-articles-016",
