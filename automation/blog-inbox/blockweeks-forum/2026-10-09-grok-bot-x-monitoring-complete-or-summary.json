@@ -1,0 +1,36 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-09",
+  "topicId": "bw-forum-005",
+  "title": "Grok Bot帮你盯X：不漏帖，还是只给三条重点？",
+  "slug": "grok-bot-x-monitoring-complete-or-summary",
+  "excerpt": "Grok Bot可以搜索、读取和监控X后，低频信息整理变得更省事；真正难选的是，要完整不漏帖，还是只收三条带原链的重点摘要。",
+  "content": "<p><a href=\"https://x.com/bot/status/2107949161878606089\">Grok Bot 官方</a>刚宣布可以搜索、读取和监控 X。中文讨论里，0xAA 把它看成低频监控和总结工具，秦巴 Frank 则想到用它整理产品反馈、突发新闻和行业动态。听起来很省事，但真正让人不放心的，还是它每天交来的东西到底漏没漏。</p><p>如果只给三条摘要，读起来轻松，可一条项目方澄清或关键回复被漏掉，结论可能完全反过来；如果要求“全部扫一遍”，结果又可能变成几十条链接，和自己刷 X 差不了多少。币圈还有个麻烦：旧帖经常被新回复重新带起来，光看帖子日期也未必够。</p><p>真让 Grok Bot 每天盯五个账号，你会选“不漏帖的完整清单”，还是“只给三条、但每条都带原帖和为什么重要”的摘要？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "0xAA：Grok Bot接入X后的低频监控与高频API边界",
+      "url": "https://x.com/0xAA_Science/status/2108038301240455189",
+      "kind": "x",
+      "publishedAt": "2026-10-08T03:34:31Z",
+      "checkedAt": "2026-10-09T10:01:00+08:00"
+    },
+    {
+      "title": "秦巴Frank：用Grok Bot搜索、阅读和监控X内容",
+      "url": "https://x.com/qinbafrank/status/2108038811255189674",
+      "kind": "x",
+      "publishedAt": "2026-10-08T03:36:32Z",
+      "checkedAt": "2026-10-09T10:01:00+08:00"
+    },
+    {
+      "title": "Grok Bot can now search, read, and monitor X",
+      "url": "https://x.com/bot/status/2107949161878606089",
+      "kind": "official",
+      "publishedAt": "2026-10-07T21:40:18Z",
+      "checkedAt": "2026-10-09T10:01:00+08:00"
+    }
+  ]
+}
