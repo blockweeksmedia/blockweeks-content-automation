@@ -44,11 +44,14 @@
   {
     "id": "bw-forum-005",
     "title": "开发者工具的真实使用讨论（候选 5）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-09",
+    "articleSlug": "grok-bot-x-monitoring-complete-or-summary",
+    "articleTitle": "Grok Bot帮你盯X：不漏帖，还是只给三条重点？"
   },
   {
     "id": "bw-forum-006",
