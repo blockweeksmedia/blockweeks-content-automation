@@ -37,7 +37,7 @@
     "title": "交易所API密钥的读取、交易和提现权限如何区分",
     "status": "used",
     "categoryIds": [
-      194
+      335
     ],
     "usedAt": "2026-10-09",
     "articleSlug": "exchange-api-key-read-trade-withdraw-permissions",
@@ -91,7 +91,7 @@
     "title": "充值Memo或Tag：为什么地址正确仍可能未到账",
     "status": "pending",
     "categoryIds": [
-      194
+      335
     ]
   },
   {
@@ -139,7 +139,7 @@
     "title": "链上提现状态与交易所到账状态有什么区别",
     "status": "pending",
     "categoryIds": [
-      194
+      335
     ]
   },
   {
@@ -187,7 +187,7 @@
     "title": "储备证明能证明哪些资产、不能证明哪些负债",
     "status": "pending",
     "categoryIds": [
-      194
+      335
     ]
   },
   {
