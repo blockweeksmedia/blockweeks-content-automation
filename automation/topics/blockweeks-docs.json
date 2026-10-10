@@ -48,7 +48,7 @@
     "title": "硬件钱包中的额外口令和助记词分别保护什么",
     "status": "used",
     "categoryIds": [
-      193
+      256
     ],
     "usedAt": "2026-10-10",
     "articleSlug": "hardware-wallet-seed-phrase-passphrase-recovery",
@@ -102,7 +102,7 @@
     "title": "代币解锁时间表应如何阅读与核对",
     "status": "pending",
     "categoryIds": [
-      193
+      256
     ]
   },
   {
@@ -150,7 +150,7 @@
     "title": "原生币与包装代币：托管、赎回及用途的区别",
     "status": "pending",
     "categoryIds": [
-      193
+      256
     ]
   },
   {
@@ -198,7 +198,7 @@
     "title": "代币治理投票权与资产所有权为什么不同",
     "status": "pending",
     "categoryIds": [
-      193
+      256
     ]
   },
   {
