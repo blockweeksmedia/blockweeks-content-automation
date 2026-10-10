@@ -1,0 +1,45 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-10",
+  "topicId": "bw-forum-001",
+  "title": "Ledger查授权经销商CryptoBilis：用户损失到底谁负责？",
+  "slug": "ledger-cryptobilis-authorized-reseller-liability",
+  "excerpt": "Ledger调查授权经销商CryptoBilis售出的设备。用户按官方建议从授权渠道购买并通过验真，若设备仍在销售链路中被改装，损失该由谁负责？",
+  "content": "<p><a href=\"https://x.com/Ledger_Support/status/2108551100613714002\">Ledger Support的通告</a>称，正在调查东南亚授权经销商CryptoBilis售出的设备，并要求其暂停发货。过去90天内买到设备的人被提醒先别初始化；已经使用的，则要考虑换新设备和新助记词。用户不是从陌生二手商家买货，而是按官方建议走了授权渠道，最后却仍要自己迁移资产并承担操作风险。</p><p>Mt. Gox前CEO Mark Karpelès还展示了一台来自马来西亚、据称加装通信模块的Ledger样本；它是否与所有资金损失有关仍未确认。Ledger自己的<a href=\"https://donjon.ledger.com/threat-model/device-genuineness/\">安全说明</a>也承认，只要原安全芯片完好，Genuine Check无法发现所有额外物理植入物。“授权渠道+官方验真”因此并不能替用户排除整台设备被动过。</p><p>如果调查最终确认设备在授权销售链路中被改装，Ledger和CryptoBilis谁该承担赔偿，用户又要拿什么证明自己属于受影响批次？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "Ledger Support：调查CryptoBilis售出设备并发布用户处置提示",
+      "url": "https://x.com/Ledger_Support/status/2108551100613714002",
+      "kind": "official",
+      "checkedAt": "2026-10-10T10:08:00+08:00"
+    },
+    {
+      "title": "杰尼君：Ledger事件与经销渠道讨论（公开转载，原帖日期未独立确认）",
+      "url": "https://zamantika.com/Meta8Mate/status/2108551790895726624",
+      "kind": "other",
+      "checkedAt": "2026-10-10T10:08:00+08:00"
+    },
+    {
+      "title": "对应X讨论串：直读不可用，以公开转载观察",
+      "url": "https://x.com/Meta8Mate/status/2108551790895726624",
+      "kind": "x",
+      "checkedAt": "2026-10-10T10:08:00+08:00"
+    },
+    {
+      "title": "比推：Karpelès披露Ledger改装样本，保留原帖链接；样本未独立检测",
+      "url": "https://api2.bitpush.news/articles/7689156",
+      "kind": "other",
+      "checkedAt": "2026-10-10T10:08:00+08:00"
+    },
+    {
+      "title": "Ledger Donjon：Genuine Check无法发现原安全芯片之外的所有物理植入物",
+      "url": "https://donjon.ledger.com/threat-model/device-genuineness/",
+      "kind": "official",
+      "checkedAt": "2026-10-10T10:08:00+08:00"
+    }
+  ]
+}

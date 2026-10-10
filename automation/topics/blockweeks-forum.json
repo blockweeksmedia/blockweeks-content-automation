@@ -2,11 +2,14 @@
   {
     "id": "bw-forum-001",
     "title": "钱包使用中值得讨论的具体问题（候选 1）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-10",
+    "articleSlug": "ledger-cryptobilis-authorized-reseller-liability",
+    "articleTitle": "Ledger查授权经销商CryptoBilis：用户损失到底谁负责？"
   },
   {
     "id": "bw-forum-002",
