@@ -46,10 +46,13 @@
   {
     "id": "bw-docs-005",
     "title": "硬件钱包中的额外口令和助记词分别保护什么",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       193
-    ]
+    ],
+    "usedAt": "2026-10-10",
+    "articleSlug": "hardware-wallet-seed-phrase-passphrase-recovery",
+    "articleTitle": "助记词还在，额外口令丢了为什么也找不回硬件钱包？"
   },
   {
     "id": "bw-docs-006",
