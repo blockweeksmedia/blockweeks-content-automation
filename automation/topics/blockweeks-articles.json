@@ -8,8 +8,11 @@
   {
     "id": "bw-articles-002",
     "title": "钱包签名与授权提示的用户体验（候选 2）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-10",
+    "articleSlug": "ledger-genuine-check-spy-implant",
+    "articleTitle": "Ledger设备被曝藏间谍模块：通过官方验真，为什么仍可能被偷助记词？"
   },
   {
     "id": "bw-articles-003",
