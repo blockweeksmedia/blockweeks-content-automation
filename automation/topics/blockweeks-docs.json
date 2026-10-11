@@ -68,10 +68,13 @@
   {
     "id": "bw-docs-007",
     "title": "质押代币和再质押代币：收益来源及赎回条件",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       216
-    ]
+    ],
+    "usedAt": "2026-10-11",
+    "articleSlug": "staking-token-restaking-token-yield-redemption",
+    "articleTitle": "质押代币和再质押代币：收益多一层，退出也多一层"
   },
   {
     "id": "bw-docs-008",
