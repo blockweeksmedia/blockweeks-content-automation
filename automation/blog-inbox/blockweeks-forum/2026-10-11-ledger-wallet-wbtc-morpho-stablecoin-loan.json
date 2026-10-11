@@ -1,0 +1,41 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-11",
+  "topicId": "bw-forum-011",
+  "title": "卧槽？Ledger钱包里也能拿WBTC借稳定币了",
+  "slug": "ledger-wallet-wbtc-morpho-stablecoin-loan",
+  "excerpt": "Ledger Wallet接入Morpho借贷，WBTC或cbBTC能直接抵押借稳定币；操作由硬件设备确认，但抵押资产进入协议合约，仓位仍有清算风险。",
+  "content": "<p>卧槽？硬件钱包的画风也变了。Ledger Wallet 新上线 Crypto Loan，符合条件的用户可以把 WBTC 或 cbBTC 抵押进 Morpho，通过 Yield.xyz 借出稳定币，关键操作仍由 Ledger 设备确认。以前大家把硬件钱包当保险柜，现在同一个入口里连借贷都能做。</p>\n<p>但“在 Ledger 里借”不等于抵押币还安静躺在冷钱包地址。官方说明写得很直白：抵押资产会进入 Morpho 市场的智能合约，合约负责计息、仓位和清算；当 LTV 超过该市场的清算阈值，仓位就可能被外部清算人处理。设备还握在手里，也不能把清算按钮按回去。Ledger 把借贷做进钱包后，界面是不是该把“抵押币已进入合约”和清算线放到确认按钮前面？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "麦克TOKEN2049见闻：Ledger硬件钱包借贷及可见回复（公开转载）",
+      "url": "https://zamantika.com/mk66623/status/2108586084905144497",
+      "kind": "other",
+      "checkedAt": "2026-10-11T09:57:30+08:00"
+    },
+    {
+      "title": "对应中文X原帖；直读不可用，正文与回复通过公开转载阅读；日期由帖子ID推算",
+      "url": "https://x.com/mk66623/status/2108586084905144497",
+      "kind": "x",
+      "publishedAt": "2026-10-09T15:51:12.933Z",
+      "checkedAt": "2026-10-11T09:57:30+08:00"
+    },
+    {
+      "title": "Morpho：Ledger Wallet上线Crypto Loan",
+      "url": "https://morpho.org/blog/ledger-crypto-loan",
+      "kind": "official",
+      "publishedAt": "2026-10-07",
+      "checkedAt": "2026-10-11T09:57:30+08:00"
+    },
+    {
+      "title": "Morpho官方文档：LTV超过LLTV后的清算机制",
+      "url": "https://docs.morpho.org/learn/concepts/liquidation/",
+      "kind": "official",
+      "checkedAt": "2026-10-11T09:57:30+08:00"
+    }
+  ]
+}
