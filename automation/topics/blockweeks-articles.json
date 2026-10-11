@@ -35,8 +35,11 @@
   {
     "id": "bw-articles-006",
     "title": "加密基础设施在真实业务中的采用（候选 6）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-11",
+    "articleSlug": "minipay-reusable-kyc-repeat-verification",
+    "articleTitle": "换个服务又要刷脸？MiniPay终于开始收拾重复KYC这件烦心事"
   },
   {
     "id": "bw-articles-007",
