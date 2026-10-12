@@ -79,10 +79,13 @@
   {
     "id": "bw-docs-008",
     "title": "Solana版本化交易与地址查找表解决了什么问题",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       205
-    ]
+    ],
+    "usedAt": "2026-10-12",
+    "articleSlug": "solana-versioned-transactions-address-lookup-tables",
+    "articleTitle": "Solana版本化交易与地址查找表：v0为什么需要ALT，v1为什么又取消了？"
   },
   {
     "id": "bw-docs-009",
