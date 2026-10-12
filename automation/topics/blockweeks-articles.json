@@ -17,8 +17,11 @@
   {
     "id": "bw-articles-003",
     "title": "DeFi机制或产品变更引发的社区分歧（候选 3）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-12",
+    "articleSlug": "papertrade-1000x-loss-mints-paper-payout-pool",
+    "articleTitle": "最高1000倍杠杆，亏钱还能拿币：Papertrade到底让谁给赢家买单？"
   },
   {
     "id": "bw-articles-004",
