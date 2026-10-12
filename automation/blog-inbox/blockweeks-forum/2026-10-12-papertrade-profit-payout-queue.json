@@ -1,0 +1,49 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-12",
+  "topicId": "bw-forum-019",
+  "title": "卧槽？Papertrade赚了钱，提款还得等下一个人亏？",
+  "slug": "papertrade-profit-payout-queue",
+  "excerpt": "Papertrade用共享资金池支付赢家，池子不够时盈利会进入队列。方向看对了，却不一定马上拿到全部钱。",
+  "content": "<p>卧槽，这玩法真把赌场逻辑写进合约里了。Papertrade最高支持1000倍杠杆，共享USDC池做所有人的对手方：输家的钱进池、还能拿PAPER，赢家则从池里领利润。最离谱的是，池子不够时，没付完的盈利不会凭空到账，而是进先到先得的队列，等后面有人继续亏。</p>\n<p>也就是说，方向看对不等于立刻拿到全部钱。平台可以说仓位已经盈利，用户账户却还要盯着队列等现金流。中文讨论里，有人觉得这是让输家慢慢拿到“赌场股份”，也有人吐槽：赚了还要等别人爆仓，这到底算结算完成，还是只拿到一张欠条？</p>\n<p>如果你的盈利只能部分到账，Papertrade前端是不是至少应该直接显示排队名次、已兑付金额，以及还差多少资金才能付清？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "比特币橙子Trader介绍Papertrade机制及可见回复（公开转载）",
+      "url": "https://zamantika.com/oragnes/status/2108943557310767606",
+      "kind": "other",
+      "publishedAt": "2026-10-10T15:31:40.996Z",
+      "checkedAt": "2026-10-12T10:08:00+08:00"
+    },
+    {
+      "title": "对应中文X原帖；正文和可见回复通过公开转载阅读，日期由帖子ID推算",
+      "url": "https://x.com/oragnes/status/2108943557310767606",
+      "kind": "x",
+      "publishedAt": "2026-10-10T15:31:40.996Z",
+      "checkedAt": "2026-10-12T10:08:00+08:00"
+    },
+    {
+      "title": "Papertrade官方：上线时间、杠杆、持仓限制、费率参数与管理员权限",
+      "url": "https://x.com/papertrade_xyz/status/2108852108766437759",
+      "kind": "official",
+      "publishedAt": "2026-10-10T09:28:17.964Z",
+      "checkedAt": "2026-10-12T10:08:00+08:00"
+    },
+    {
+      "title": "Papertrade官方文档",
+      "url": "https://docs.papertrade.xyz/",
+      "kind": "official",
+      "checkedAt": "2026-10-12T10:08:00+08:00"
+    },
+    {
+      "title": "Bankless：Papertrade共享资金池、盈利排队与PAPER发行机制",
+      "url": "https://www.bankless.com/read/what-to-know-about-papertrade-s-launch",
+      "kind": "other",
+      "publishedAt": "2026-10-09",
+      "checkedAt": "2026-10-12T10:08:00+08:00"
+    }
+  ]
+}
