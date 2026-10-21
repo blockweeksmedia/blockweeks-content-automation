@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-22",
+  "siteId": "blockweeks-articles",
+  "outcome": "blocked",
+  "reasonCode": "configuration_error",
+  "queries": [
+    "site:x.com/_FORAB/status after:2026-10-15",
+    "site:x.com/0xVeryBigOrange/status after:2026-10-15",
+    "site:x.com/Meta8Mate/status after:2026-10-15",
+    "site:x.com/mk66623/status after:2026-10-15",
+    "site:x.com/_FORAB/status \"_FORAB\"",
+    "site:x.com/0xVeryBigOrange/status \"0xVeryBigOrange\"",
+    "site:x.com/Meta8Mate/status \"Meta8Mate\"",
+    "site:x.com/mk66623/status \"mk66623\"",
+    "site:x.com/WuBlockchain/status \"WuBlockchain\"",
+    "site:x.com/oragnes/status \"oragnes\""
+  ],
+  "accountUrls": [
+    "https://x.com/_FORAB",
+    "https://x.com/0xVeryBigOrange",
+    "https://x.com/Meta8Mate",
+    "https://x.com/mk66623",
+    "https://x.com/oragnes",
+    "https://x.com/WuBlockchain"
+  ],
+  "candidates": [
+    {
+      "url": "https://x.com/_FORAB/status/2111413444666966295",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "X returned 403; full text and post/reply dates unverified."
+    },
+    {
+      "url": "https://x.com/0xVeryBigOrange/status/2111786947404513727",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "X returned 403; indexed snippet about Binance pajamas insufficient for an article."
+    },
+    {
+      "url": "https://x.com/mk66623/status/2110400635866906831",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "X returned 403; broad legal claim lacks current first-party verification and confirmed post date."
+    },
+    {
+      "url": "https://x.com/_FORAB/status/2112824812691423715",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "X returned 403; indexed CreditEase claim not sufficiently tied to crypto; not independently verified."
+    },
+    {
+      "url": "https://x.com/WuBlockchain/status/2112926468305227784",
+      "language": "en",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": true,
+      "rejectionReason": "Read via https://www.twstalker.com/WuBlockchain/status/2112926468305227784, including visible replies. Only relative post/reply times shown; underlying Oct 21 Bastion press release could not be fetched. Potential lead retained, facts not established."
+    }
+  ],
+  "mainSha": "a6da9ecaf9b45395d1c4f6c9197bde8fcdbb659a",
+  "checkedAt": "2026-10-21T22:01:08.233Z",
+  "diagnostics": {
+    "strategyPR16Merged": true,
+    "siteEnabled": true,
+    "status": "draft",
+    "mergeMode": "checked",
+    "todayMainArticles": 0,
+    "openPRs": 0,
+    "pendingTopics": 18,
+    "searchEngines": [
+      "system2",
+      "system1"
+    ],
+    "primaryAccess": "Five selected Chinese X posts plus two English posts returned 403. Public profile mirrors readable; their relative times were not treated as verified dates.",
+    "mirrorUrls": [
+      "https://www.twstalker.com/_FORAB",
+      "https://zamantika.com/profile/0xVeryBigOrange",
+      "https://zamantika.com/profile/Meta8Mate",
+      "https://zamantika.com/profile/mk66623",
+      "https://www.twstalker.com/WuBlockchain"
+    ],
+    "snapshotCheckedAt": "2026-10-04T16:57:21.563Z",
+    "latestPreflightRunId": 37217637090,
+    "availableArtifacts": 0,
+    "preflightRefresh": "Current tool discovery exposes no workflow-dispatch operation; rerun_workflow_job is documented for failed/cancelled jobs. The most recent preflight succeeded and its artifact is no longer available. No workflow/configuration changes or write-side workaround attempted.",
+    "officialSourceAttempt": "https://www.globenewswire.com/news-release/2026/10/21/3385487/0/en/bastion-trading-calls-on-skyai-chairman-and-directors-to-demonstrate-accountability-and-to-provide-a-better-tender-offer-for-all-stockholders-and-pre-funded-warrant-holders.html — inaccessible",
+    "wordpressAttempted": false,
+    "draftId": null
+  },
+  "requiredRecovery": "Restore an authorized way to run the existing read-only wordpress-preflight and retrieve a current inventory. Recheck original discussion dates and first-party evidence before creating content. Then resume the article task."
+}
