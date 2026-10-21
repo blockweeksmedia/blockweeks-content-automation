@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-21",
+  "siteId": "blockweeks-docs",
+  "outcome": "blocked",
+  "reasonCode": "configuration_error",
+  "mainSha": "5d7cb234738f986b9050b80b8f304223efc7af7d",
+  "checkedAt": "2026-10-21T13:01:46.934Z",
+  "queries": [
+    "GitHub main tree and docs topic/title inventory",
+    "GitHub open PRs",
+    "GitHub wordpress-preflight run 37217637090 jobs and artifacts",
+    "https://blockweeks.com/wp-json/wp/v2/docs?per_page=100&_fields=id,title,slug",
+    "https://blockweeks.com/docs/liquidation/",
+    "https://blockweeks.com/docs"
+  ],
+  "candidates": [
+    {
+      "topicId": "bw-docs-009",
+      "title": "止损单的触发价与成交价为什么可能不同",
+      "url": null,
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "Not rejected on merit. Latest inventory unavailable; cannot finish existing-content/search-intent comparison."
+    }
+  ],
+  "diagnostics": {
+    "todayMainArticleCount": 0,
+    "openPRCount": 0,
+    "siteEnabled": true,
+    "siteStatus": "draft",
+    "snapshotCheckedAt": "2026-10-04T16:57:21.563Z",
+    "preflightRun": 37217637090,
+    "preflightArtifactCount": 0,
+    "preflightRefresh": "Automatic approval rejected rerunning previously successful read-only job 114092411212 as unnecessary write-side effect without specific authorization. No bypass attempted.",
+    "publicPages": "REST docs route and liquidation article inaccessible via web reader; docs index returned category links without document list.",
+    "officialResearch": "Not started because prerequisite deduplication is blocked.",
+    "contentCreated": false,
+    "wordpressAttempted": false,
+    "wordpressDraftId": null
+  },
+  "requiredRecovery": "Refresh existing read-only wordpress-preflight inventory with authorized execution; make current docs inventory and related existing articles readable, then resume this task."
+}
