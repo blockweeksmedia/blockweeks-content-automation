@@ -77,8 +77,11 @@
   {
     "id": "bw-articles-011",
     "title": "DeFi机制或产品变更引发的社区分歧（候选 11）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-22",
+    "articleSlug": "ssv-labs-unpaid-grant-roadmap-cutback",
+    "articleTitle": "173.6万枚SSV拨款还没付，SSV Labs提议先保运转"
   },
   {
     "id": "bw-articles-012",
