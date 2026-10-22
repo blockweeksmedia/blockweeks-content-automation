@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-22",
+  "siteId": "blockweeks-forum",
+  "outcome": "blocked",
+  "reasonCode": "configuration_error",
+  "queries": [
+    "site:x.com/Phyrex_Ni/status \"Phyrex_Ni\"",
+    "site:x.com/0xAA_Science/status \"0xAA_Science\"",
+    "site:x.com/qinbafrank/status \"qinbafrank\"",
+    "site:x.com/oragnes/status \"oragnes\"",
+    "site:x.com/_FORAB/status \"_FORAB\" after:2026-10-15",
+    "site:x.com/Meta8Mate/status \"Meta8Mate\" after:2026-10-15",
+    "site:x.com/WuBlockchain/status \"WuBlockchain\" after:2026-10-15",
+    "site:x.com/WuBlockchain/status \"WuBlockchain\""
+  ],
+  "accountUrls": [
+    "https://x.com/Phyrex_Ni",
+    "https://x.com/0xAA_Science",
+    "https://x.com/qinbafrank",
+    "https://x.com/oragnes",
+    "https://x.com/_FORAB",
+    "https://x.com/WuBlockchain"
+  ],
+  "candidates": [
+    {
+      "url": "https://x.com/qinbafrank/status/2112821758780989920",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "X returned 403; indexed market outlook is insufficient to establish a specific event or confirmed post/reply date."
+    },
+    {
+      "url": "https://x.com/oragnes/status/2106626471414702129",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "X returned 403. Index includes Oct 3 content outside the seven-day window; no recent substantive reply verified."
+    },
+    {
+      "url": "https://x.com/0xAA_Science/status/2091926520701104460",
+      "language": "zh",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "X returned 403. Index includes Aug 24 content and an emoji; no recent substantive discussion verified."
+    },
+    {
+      "url": "https://x.com/WuBlockchain/status/2112926468305227784",
+      "language": "en",
+      "publishedAt": null,
+      "replyAt": null,
+      "readable": false,
+      "rejectionReason": "Rechecked article-task research lead independently; public mirror is now inaccessible and profile times out. Earlier report is not treated as current first-party verification."
+    }
+  ],
+  "mainSha": "1a42bd4d16a0c8a29091d334a863cc2619d57bb4",
+  "checkedAt": "2026-10-22T00:06:25.645Z",
+  "diagnostics": {
+    "strategyPR16Merged": true,
+    "articleResearchPR": 46,
+    "articleResearchOnly": true,
+    "articleSharedMaterial": "No article content/sources today. Read PR46 and same-main article report; independently checked forum candidates rather than inheriting article rejection.",
+    "siteEnabled": true,
+    "siteStatus": "draft",
+    "mergeMode": "checked",
+    "todayMainForumPosts": 0,
+    "openPRs": 0,
+    "pendingTopics": 16,
+    "searchEngines": [
+      "system1",
+      "system2"
+    ],
+    "publicMirrorResults": [
+      {
+        "url": "https://zamantika.com/profile/oragnes",
+        "readable": true,
+        "note": "Ledger/AI cryptography material visible, but only relative post times; no exact original post URL/date established for new material. Ledger supply-chain event overlaps existing forum history."
+      },
+      {
+        "url": "https://www.twstalker.com/_FORAB",
+        "readable": true,
+        "note": "PHP vulnerability claim visible, but relative post time and first-party evidence unverified; not turned into a security alert."
+      },
+      {
+        "url": "https://www.twstalker.com/qinbafrank",
+        "readable": false
+      },
+      {
+        "url": "https://www.twstalker.com/WuBlockchain",
+        "readable": false
+      }
+    ],
+    "snapshotCheckedAt": "2026-10-04T16:57:21.563Z",
+    "latestPreflightRunId": 37217637090,
+    "latestPreflightCreatedAt": "2026-10-04T16:40:29Z",
+    "availableArtifacts": 0,
+    "preflightRefresh": "Current GitHub tool discovery has artifact reads, failed-job reruns and individual job reruns, but no workflow-dispatch operation. Latest preflight was successful; no failed-job recovery or configuration changes used as a substitute.",
+    "wordpressAttempted": false,
+    "draftId": null
+  },
+  "requiredRecovery": "Restore a supported authorized operation to start the existing read-only wordpress-preflight and retrieve current inventory, then resume the forum task. Recheck original discussion dates and sufficient first-party facts before drafting."
+}
