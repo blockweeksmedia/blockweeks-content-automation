@@ -1,0 +1,34 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-22",
+  "topicId": "bw-forum-014",
+  "title": "卧槽？旧拨款没付，SSV Labs新提案还要90万美元优先担保？",
+  "slug": "ssv-labs-unpaid-grant-priority-security",
+  "excerpt": "SSV Labs新提案中的优先担保安排，和旧拨款未支付的问题。",
+  "content": "<p>卧槽，SSV这次提案里还有这么一条。SSV Labs说，原定的173.6万枚SSV拨款至今没付；10月21日提交的新方案，除了缩减开发范围，还要求对基金会持有的90万美元资产设立第一顺位担保权益。旧账没结，新安排已经开始谈付款保障了。</p><p>先说清楚，这不是另外加收90万美元，也不是已经把钱划走：提案希望把这部分资产用来保障2027年的付款，仍需治理通过。团队担心干完活拿不到钱，可以理解；但对DAO来说，哪些资产能自由使用、哪些已经有了承诺，也得摊开讲。</p><p>开发团队要求先把付款保障落实，这事够现实。既然现在连担保安排都能写这么细，此前那笔173.6万枚SSV到底卡在哪一步，为什么还没付？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "WuBlockchain英文讨论，已通过公开转载读取正文与回复",
+      "url": "https://x.com/WuBlockchain/status/2113106617629896949",
+      "kind": "x",
+      "checkedAt": "2026-10-22T07:18:23.908Z"
+    },
+    {
+      "title": "WuBlockchain公开转载及可见回复",
+      "url": "https://www.twstalker.com/WuBlockchain/status/2113106617629896949",
+      "kind": "other",
+      "checkedAt": "2026-10-22T07:18:23.908Z"
+    },
+    {
+      "title": "DIP-59原文：未付第三期及90万美元第一顺位担保安排",
+      "url": "https://forum.ssv.network/t/dip-59-amendment-to-and-extension-of-dip-31-network-stewardship-efforts-budget-by-ssv-labs/2186",
+      "kind": "official",
+      "checkedAt": "2026-10-22T07:18:23.908Z",
+      "publishedAt": "2026-10-21"
+    }
+  ]
+}
