@@ -140,11 +140,14 @@
   {
     "id": "bw-forum-014",
     "title": "Web3社区治理中的一个具体争议（候选 14）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-22",
+    "articleSlug": "ssv-labs-unpaid-grant-priority-security",
+    "articleTitle": "卧槽？旧拨款没付，SSV Labs新提案还要90万美元优先担保？"
   },
   {
     "id": "bw-forum-015",
