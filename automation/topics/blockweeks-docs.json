@@ -90,10 +90,13 @@
   {
     "id": "bw-docs-009",
     "title": "止损单的触发价与成交价为什么可能不同",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       335
-    ]
+    ],
+    "usedAt": "2026-10-22",
+    "articleSlug": "stop-loss-trigger-price-execution-price",
+    "articleTitle": "止损单的触发价与成交价：订单启动后，还要经过撮合"
   },
   {
     "id": "bw-docs-010",
