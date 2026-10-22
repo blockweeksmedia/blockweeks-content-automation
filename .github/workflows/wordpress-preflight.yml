@@ -1,15 +1,22 @@
 name: wordpress-preflight
 on:
   workflow_dispatch:
+  schedule:
+    # Asia/Shanghai 05:15 and 20:15, before daily editorial runs.
+    - cron: '15 12,21 * * *'
   push:
     branches: [main]
     paths:
       - '.github/workflows/wordpress-preflight.yml'
+concurrency:
+  group: wordpress-preflight
+  cancel-in-progress: false
 permissions:
   contents: read
 jobs:
   read-only-check:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -67,4 +74,4 @@ jobs:
           name: blockweeks-preflight-result
           path: blockweeks-*.json
           if-no-files-found: warn
-          retention-days: 7
+          retention-days: 30
