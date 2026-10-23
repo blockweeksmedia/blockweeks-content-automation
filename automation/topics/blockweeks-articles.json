@@ -116,8 +116,11 @@
   {
     "id": "bw-articles-016",
     "title": "代币设计与治理的新讨论（候选 16）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-24",
+    "articleSlug": "pumpfun-kimchi-linked-wallets-switch-in-59-seconds",
+    "articleTitle": "Pump.fun刚签下Kimchi，同名币上线59秒三个关联钱包就砸旧抢新"
   },
   {
     "id": "bw-articles-017",
