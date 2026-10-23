@@ -236,10 +236,13 @@
   {
     "id": "bw-forum-024",
     "title": "近期生态变化对普通用户的影响（候选 24）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-23",
+    "articleSlug": "a16z-frontier-crypto-fund-allocation-question",
+    "articleTitle": "卧槽？a16z刚募22亿美元，五个月后就把Crypto从招牌上摘了？"
   }
 ]
