@@ -1,0 +1,36 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-24",
+  "topicId": "bw-forum-012",
+  "title": "卧槽？KIMCHI新币上线59秒，三个关联钱包已经砸旧抢新了",
+  "slug": "kimchi-token-59-seconds-wallet-warning",
+  "excerpt": "KIMCHI同名新币上线59秒，三个关联钱包已经卖旧抢新；平台是否应该直接标红首分钟的筹码结构？",
+  "content": "<p>卧槽？Pump.fun刚把Kimchi包装成“交易员变名人”的样板，同名新币上线才59秒，三个关联钱包已经卖光旧KIMCHI、同步抢进新币。它们投了7332美元，九分钟内卖出11.17万美元；旧币估值却在15分钟里从约535万美元掉到87.5万美元。</p><p>更离谱的是，新币部署者在创建交易里一次买走79.3%的供应量，第一位外部买家的成交价已经贵了3.8倍。链上记录不能证明这些钱包提前拿到内幕，也没发现它们和部署者直接转账，但普通人点进交易页时，面对的显然不是一场真正“同时起跑”的游戏。</p><p>Pump.fun是不是应该在同名币上线页直接标红旧币冲突、部署者首笔持仓和首分钟关联钱包换仓，而不是等用户买完后自己翻链？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "麦克中文讨论：Kimchi与Pump.fun收益反差",
+      "url": "https://x.com/mk66623/status/2113648102729200118",
+      "kind": "x",
+      "checkedAt": "2026-10-23T22:05:00.000Z",
+      "publishedAt": "2026-10-23"
+    },
+    {
+      "title": "Pump.fun联合创始人Alon宣布Kimchi合作",
+      "url": "https://x.com/a1lon9/status/2112685193928773962",
+      "kind": "x",
+      "checkedAt": "2026-10-23T22:05:00.000Z",
+      "publishedAt": "2026-10-20"
+    },
+    {
+      "title": "Bitquery：三个关联钱包在59秒内卖旧币买新币",
+      "url": "https://bitquery.io/investigations/kimchi-pumpfun-launch-snipers",
+      "kind": "other",
+      "checkedAt": "2026-10-23T22:05:00.000Z",
+      "publishedAt": "2026-10-21"
+    }
+  ]
+}

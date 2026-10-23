@@ -122,11 +122,14 @@
   {
     "id": "bw-forum-012",
     "title": "链上交易信息展示是否清楚（候选 12）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-24",
+    "articleSlug": "kimchi-token-59-seconds-wallet-warning",
+    "articleTitle": "卧槽？KIMCHI新币上线59秒，三个关联钱包已经砸旧抢新了"
   },
   {
     "id": "bw-forum-013",
