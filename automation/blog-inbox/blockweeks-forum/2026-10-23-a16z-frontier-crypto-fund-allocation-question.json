@@ -1,0 +1,48 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-23",
+  "topicId": "bw-forum-024",
+  "title": "卧槽？a16z刚募22亿美元，五个月后就把Crypto从招牌上摘了？",
+  "slug": "a16z-frontier-crypto-fund-allocation-question",
+  "excerpt": "a16z Crypto刚募集第五期基金便更名Frontier，真正需要说清楚的是新基金的实际投向。",
+  "content": "<p>卧槽？a16z Crypto今年5月才募集22亿美元第五期基金，10月就把Crypto从招牌上摘掉，改叫a16z Frontier，还把AI等前沿技术塞进投资范围。最会给Crypto讲长期故事的一批人，现在先把自己的门牌做宽了。</p><p>这不等于退出币圈。a16z官网仍把Chris Dixon列为Frontier负责人，代表投资里还有Coinbase、Bitcoin、Ethereum和Uniswap。不过第四期45亿美元、第五期22亿美元，再叠加改名和Ali Yahya被报道计划离开，大家怀疑Crypto在内部降级，也不算瞎猜。</p><p>最该讲清楚的是，5月募集的这22亿美元未来到底怎么投。如果投资授权和团队资源都没变，这只是换门牌；如果新钱开始跨赛道，性质就完全不同。在你看来，这22亿美元里至少要有多少比例继续投纯加密，才能证明这次真的只是改名？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "比特币橙子Trader中文讨论；公开转载页面，原帖精确时分未确认",
+      "url": "https://zamantika.com/profile/oragnes",
+      "kind": "other",
+      "checkedAt": "2026-10-23T00:00:00.000Z"
+    },
+    {
+      "title": "Leo Schwartz在X披露a16z Frontier更名及人员变化",
+      "url": "https://x.com/leomschwartz/status/2113226514569351212",
+      "kind": "x",
+      "checkedAt": "2026-10-23T00:00:00.000Z",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "title": "Fortune：a16z Crypto更名为a16z Frontier",
+      "url": "https://fortune.com/2026/10/22/venture-giant-andreessen-horowitz-crypto-name-blockchain-fund-rebrands-a16z-frontier/",
+      "kind": "other",
+      "checkedAt": "2026-10-23T00:00:00.000Z",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "title": "a16z官方：Chris Dixon列入Frontier投资团队",
+      "url": "https://a16z.com/author/chris-dixon/",
+      "kind": "official",
+      "checkedAt": "2026-10-23T00:00:00.000Z"
+    },
+    {
+      "title": "Economic Times：a16z第五期加密基金规模及投资方向",
+      "url": "https://economictimes.indiatimes.com/tech/technology/a16zs-crypto-vehicle-launches-2-2-billion-fund-v/articleshow/130833040.cms",
+      "kind": "other",
+      "checkedAt": "2026-10-23T00:00:00.000Z",
+      "publishedAt": "2026-05-05"
+    }
+  ]
+}
