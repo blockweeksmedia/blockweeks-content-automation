@@ -131,8 +131,11 @@
   {
     "id": "bw-articles-018",
     "title": "钱包签名与授权提示的用户体验（候选 18）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-25",
+    "articleSlug": "darksword-deadtag-iphone-wallets",
+    "articleTitle": "刷广告没点链接也可能中招：DeadTag正把DarkSword送进旧版iPhone"
   },
   {
     "id": "bw-articles-019",
