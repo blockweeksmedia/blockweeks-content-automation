@@ -1,0 +1,42 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-25",
+  "topicId": "bw-forum-009",
+  "title": "卧槽？刷个Instagram广告都可能中DarkSword，大额钱包还敢放日常手机里？",
+  "slug": "darksword-daily-iphone-wallet-threshold",
+  "excerpt": "DarkSword新投放链让旧版iPhone加载恶意广告时就可能暴露钱包数据，日常手机到底还能安全放多少钱？",
+  "content": "<p>卧槽？iVerify披露的案例里，一名持有加密资产的iPhone用户只是在Instagram信息流里刷到世界杯主题广告，P7版DarkSword就被投放进了设备。另一批攻击者更狠，直接买下早已过期、却还被大量网站调用的统计域名，让旧版iOS在加载网页元素时自动撞上漏洞链，甚至不需要再点一次。</p><p>它盯的也不是一笔恶意授权，而是钥匙串、照片、备忘录和钱包应用数据。研究列出的目标包括OKX、Bitget、Trust Wallet、TronLink等。当然，相关网站每月1.35亿次访问不等于1.35亿人中招，及时更新iOS仍能堵住已知链条；可一台手机同时负责刷网页、存密码和签名，大额资产跟日常入口放在一起，怎么看都像把保险箱钥匙挂在门外。</p><p>你会把分界线放在多少钱：超过这个金额后，就不再让日常手机同时负责浏览和钱包签名？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "比特币橙子Trader关于DarkSword新变种的中文讨论；X正文直连受限，未采用逐字引语",
+      "url": "https://x.com/oragnes/status/2113877458596602274",
+      "kind": "x",
+      "checkedAt": "2026-10-24T23:58:00.000Z"
+    },
+    {
+      "title": "iVerify与Report URI：恶意广告和过期统计标签投放Coruna与DarkSword",
+      "url": "https://www.iverify.com/blog/malvertising-coruna-darksword-iphone-exploits",
+      "kind": "other",
+      "checkedAt": "2026-10-24T23:58:00.000Z",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "title": "iVerify：P7 DarkSword变种设备调查与钱包窃取能力",
+      "url": "https://www.iverify.com/blog/darksword-variant-threat-research",
+      "kind": "other",
+      "checkedAt": "2026-10-24T23:58:00.000Z",
+      "publishedAt": "2026-10-08"
+    },
+    {
+      "title": "Apple：iOS 18.7.7安全更新加入DarkSword防护",
+      "url": "https://support.apple.com/en-us/126981",
+      "kind": "official",
+      "checkedAt": "2026-10-24T23:58:00.000Z",
+      "publishedAt": "2026-03-24"
+    }
+  ]
+}
