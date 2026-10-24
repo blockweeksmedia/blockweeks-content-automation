@@ -92,11 +92,14 @@
   {
     "id": "bw-forum-009",
     "title": "钱包使用中值得讨论的具体问题（候选 9）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-25",
+    "articleSlug": "darksword-daily-iphone-wallet-threshold",
+    "articleTitle": "卧槽？刷个Instagram广告都可能中DarkSword，大额钱包还敢放日常手机里？"
   },
   {
     "id": "bw-forum-010",
