@@ -2,8 +2,11 @@
   {
     "id": "bw-articles-001",
     "title": "稳定币的真实支付需求与用户讨论（候选 1）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-26",
+    "articleSlug": "injective-krw1-institutional-mint-redemption",
+    "articleTitle": "韩国用户不用先换U了？Injective要把KRW1接进RWA市场，赎回入口却还只给机构"
   },
   {
     "id": "bw-articles-002",
