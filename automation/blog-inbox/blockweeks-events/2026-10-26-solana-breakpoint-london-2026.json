@@ -1,0 +1,41 @@
+{
+  "siteId": "blockweeks-events",
+  "date": "2026-10-26",
+  "topicId": "bw-events-002",
+  "title": "Solana Breakpoint 2026：11月15–17日伦敦大会，聚焦稳定币与资产上链",
+  "slug": "solana-breakpoint-london-2026",
+  "excerpt": "Solana Foundation主办的Breakpoint 2026将在伦敦Olympia举行，议题围绕稳定币、资产代币化、支付及AI链上应用，官方报名已开放。",
+  "content": "<p>Solana Breakpoint 2026将于2026年11月15日至17日在英国伦敦Olympia举行，由Solana Foundation主办，采用线下形式。本届以“Token Supercycle”为主题，关注稳定币、资产代币化、支付，以及AI带来的链上经济活动，面向开发者、项目团队、投资者与金融机构。</p><p>官方报名页列出的活动时间为11月15日16:00至11月17日19:00，采用伦敦当地时间，IANA时区为Europe/London，当时为GMT。这里记录的是报名页活动整体起止时间，各场演讲与工作坊仍应以主办方后续议程为准。</p><p>场地为Olympia London，地址Hammersmith Rd, London W14 8UX, UK。活动内容包括主题演讲、短讲、辩论、工作坊和交流，适合希望了解Solana技术与应用进展、寻找协作机会的参与者。官网已公布部分嘉宾及赞助方，可在报名之前查看最新名单。</p><p>截至10月26日，官方报名页普通门票标价550美元；官网另列开发者和学生申请票种，不同票种条件及实际结算价格以官方页面为准。开发者与学生票须按对应申请入口核对资格。参会者可通过<a href=\"https://luma.com/breakpoint2026\">官方报名页</a>购票，或从<a href=\"https://solana.com/breakpoint\">大会官网</a>查看活动及后续更新。</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    197,
+    196
+  ],
+  "sources": [
+    {
+      "title": "Breakpoint 2026 official conference",
+      "url": "https://solana.com/breakpoint",
+      "kind": "official",
+      "checkedAt": "2026-10-26T16:05:00+08:00"
+    },
+    {
+      "title": "Solana Foundation official Breakpoint registration: date, time, host and venue",
+      "url": "https://luma.com/breakpoint2026",
+      "kind": "official",
+      "checkedAt": "2026-10-26T16:05:00+08:00"
+    },
+    {
+      "title": "Breakpoint 2026 ticket options",
+      "url": "https://solana.com/breakpoint/registration",
+      "kind": "official",
+      "checkedAt": "2026-10-26T16:05:00+08:00"
+    }
+  ],
+  "event": {
+    "startDate": "2026-11-15 16:00:00",
+    "endDate": "2026-11-17 19:00:00",
+    "timezone": "Europe/London",
+    "allDay": false,
+    "website": "https://solana.com/breakpoint"
+  }
+}
