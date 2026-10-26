@@ -233,11 +233,14 @@
   {
     "id": "bw-docs-026",
     "title": "Gate交易所全面介绍：背景、产品、费用、合规与安全",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       194
     ],
-    "note": "2026-10-23交易所专栏候选；成稿前核实当前运营与各板块官方资料，复查目录/历史/开放PR；无可靠材料则换题。"
+    "note": "2026-10-23交易所专栏候选；成稿前核实当前运营与各板块官方资料，复查目录/历史/开放PR；无可靠材料则换题。",
+    "usedAt": "2026-10-26",
+    "articleSlug": "gate-exchange-complete-guide",
+    "articleTitle": "Gate交易所全面介绍：产品、费用、合规、安全与适用人群"
   },
   {
     "id": "bw-docs-027",
