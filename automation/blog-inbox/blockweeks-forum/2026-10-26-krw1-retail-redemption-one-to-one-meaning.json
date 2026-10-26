@@ -1,0 +1,35 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-26",
+  "topicId": "bw-forum-002",
+  "title": "还能这样？KRW1说1:1锚定韩元，铸造赎回入口初期却只给机构？",
+  "slug": "krw1-retail-redemption-one-to-one-meaning",
+  "excerpt": "KRW1宣称由韩元1:1支持，但Injective与BDACS公告显示，初期铸造和赎回仅向获批机构开放。普通用户若只能在二级市场买卖，1:1究竟是储备说明还是兑付承诺？",
+  "content": "<p>还能这样？Injective和BDACS刚宣布要把KRW1接进RWA市场，中文圈已经有人开始喊“韩国用户不用先换U了”。但官方公告里藏着一个很关键的限制：KRW1虽然宣称由韩元1:1支持，初期铸造和赎回却只向获批的机构合作方开放，而且还要等监管批准。</p>\n<p>这就有点尴尬了。1:1储备只能说明发行方背后放了多少韩元，不代表每个拿币的人都能直接按1韩元找发行方换回现金。普通用户如果只能在二级市场卖，实际退出价格还得看做市商、交易深度和点差；机构有赎回门，散户可能只有交易门。</p>\n<p>如果个人长期不能直接按面值赎回，平台还应不应该在交易页面上直接写“1 KRW1等于1韩元”？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "Meta8Mate关于Injective与KRW1合作的中文讨论；X正文直连受限，未采用逐字引语",
+      "url": "https://x.com/Meta8Mate/status/2114314346142794046",
+      "kind": "x",
+      "checkedAt": "2026-10-26T00:05:00.000Z"
+    },
+    {
+      "title": "Injective：与BDACS合作把KRW1用于链上RWA韩元结算",
+      "url": "https://injective.com/blog/bdacs",
+      "kind": "official",
+      "checkedAt": "2026-10-26T00:05:00.000Z",
+      "publishedAt": "2026-10-20"
+    },
+    {
+      "title": "韩国金融委员会：代币化证券与稳定币链上支付基础设施路线图",
+      "url": "https://www.fsc.go.kr/eng/pr010101/87653",
+      "kind": "official",
+      "checkedAt": "2026-10-26T00:05:00.000Z",
+      "publishedAt": "2026-09-04"
+    }
+  ]
+}
