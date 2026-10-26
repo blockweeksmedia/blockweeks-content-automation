@@ -161,8 +161,11 @@
   {
     "id": "bw-articles-022",
     "title": "加密基础设施在真实业务中的采用（候选 22）",
-    "status": "pending",
-    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle"
+    "status": "used",
+    "note": "选择时匹配真实近期原帖，未匹配则跳过；实际标题记录articleTitle",
+    "usedAt": "2026-10-27",
+    "articleSlug": "strategy-pauses-bitcoin-buys-strc-buyback",
+    "articleTitle": "Strategy一周没买比特币，却花2.049亿美元回购STRC：先稳住融资工具？"
   },
   {
     "id": "bw-articles-023",
