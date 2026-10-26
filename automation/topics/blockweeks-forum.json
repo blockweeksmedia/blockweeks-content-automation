@@ -14,11 +14,14 @@
   {
     "id": "bw-forum-002",
     "title": "近期稳定币应用讨论里的用户分歧（候选 2）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-26",
+    "articleSlug": "krw1-retail-redemption-one-to-one-meaning",
+    "articleTitle": "还能这样？KRW1说1:1锚定韩元，铸造赎回入口初期却只给机构？"
   },
   {
     "id": "bw-forum-003",
