@@ -1,0 +1,29 @@
+{
+  "siteId": "blockweeks-forum",
+  "date": "2026-10-27",
+  "topicId": "bw-forum-016",
+  "title": "还能这样？STRC回购价已近100美元，Strategy还砸2.049亿美元去接",
+  "slug": "strategy-strc-buyback-near-par-trigger",
+  "excerpt": "STRC平均回购价已经接近100美元，Strategy仍用2.049亿美元灵活现金继续回购，并暂停了连续五周的买币节奏。公司应公开什么价格和期限条件，才能说明这笔回购合理？",
+  "content": "<p>还能这样？Strategy在10月19日至25日一枚BTC都没买，反而拿出2.049亿美元，回购了206.8459万股STRC。粗算平均每股约99.06美元，已经几乎贴着100美元的发行基准价，不像是在七八十美元的位置捡便宜货。</p>\n<p>更扎眼的是，这笔钱来自可用于买BTC和其他资本用途的USD Cash，回购后只剩2.424亿美元。另有48.3亿美元USD Reserve主要留给优先股分红和债务利息，两只“现金口袋”不能混在一起看。公司没有卖BTC，但连续五周的买币节奏确实停了。</p>\n<p>既然STRC已经接近100美元，Strategy继续大额回购的明确触发条件到底是什么：价格低于多少、持续多久，才值得暂停买币去接？</p>",
+  "source": "codex-scheduled-task",
+  "categoryIds": [
+    1816
+  ],
+  "sources": [
+    {
+      "title": "Reddit讨论：Strategy上一周买入约2200万美元BTC并回购约1.93亿美元STRC",
+      "url": "https://www.reddit.com/r/CryptoCurrency/comments/1xaxa6w/strategy_buys_another_22_million_of_bitcoin/",
+      "kind": "reddit",
+      "checkedAt": "2026-10-27T00:15:00.000Z",
+      "publishedAt": "2026-10-20"
+    },
+    {
+      "title": "Strategy 8-K：2026年10月19日至25日未买卖BTC并回购2.049亿美元STRC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526431146/mstr-20261026.htm",
+      "kind": "official",
+      "checkedAt": "2026-10-27T00:15:00.000Z",
+      "publishedAt": "2026-10-26"
+    }
+  ]
+}
