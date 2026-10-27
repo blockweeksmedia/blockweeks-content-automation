@@ -170,11 +170,14 @@
   {
     "id": "bw-forum-016",
     "title": "近期生态变化对普通用户的影响（候选 16）",
-    "status": "pending",
+    "status": "used",
     "categoryIds": [
       1816
     ],
-    "note": "必须有可读的近期原帖；不虚构经历"
+    "note": "必须有可读的近期原帖；不虚构经历",
+    "usedAt": "2026-10-27",
+    "articleSlug": "strategy-strc-buyback-near-par-trigger",
+    "articleTitle": "还能这样？STRC回购价已近100美元，Strategy还砸2.049亿美元去接"
   },
   {
     "id": "bw-forum-017",
